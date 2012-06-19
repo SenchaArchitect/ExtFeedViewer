@@ -1,0 +1,98 @@
+{
+    "id": "ExtBox1-ext-gen3230",
+    "type": "panel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "layout": "fit",
+        "collapseDirection": "left",
+        "collapsible": false,
+        "title": "Feeds",
+        "designer|userClassName": "FeedPanel",
+        "designer|userAlias": "feedpanel"
+    },
+    "customConfigs": [],
+    "designerId": "c84fb3e7-80ad-4f16-b5ff-73aed7162ce4",
+    "$viewOrder": 1,
+    "cn": [
+        {
+            "id": "ExtBox1-ext-gen7224",
+            "type": "toolbar",
+            "reference": {
+                "name": "dockedItems",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "id": null,
+                "itemId": "toolbar",
+                "designer|userClassName": "MyToolbar",
+                "dock": "top"
+            },
+            "customConfigs": [],
+            "cn": [
+                {
+                    "id": "ExtBox1-ext-gen7888",
+                    "type": "button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "id": null,
+                        "itemId": "add",
+                        "iconCls": "feed-add",
+                        "text": "Add Feed",
+                        "designer|userClassName": "MyButton",
+                        "layout|flex": null
+                    },
+                    "customConfigs": []
+                },
+                {
+                    "id": "ExtBox1-ext-gen8230",
+                    "type": "button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "disabled": true,
+                        "itemId": "remove",
+                        "iconCls": "feed-remove",
+                        "text": "Remove Feed",
+                        "designer|userClassName": "MyButton1",
+                        "layout|flex": null
+                    },
+                    "customConfigs": []
+                }
+            ]
+        },
+        {
+            "id": "ExtBox1-ext-gen6659",
+            "type": "dataview",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "cls": "feed-list",
+                "id": null,
+                "itemId": "dataview",
+                "tpl": "<tpl for=\".\"><div class=\"feed-list-item\">{title}</div></tpl>",
+                "itemSelector": ".feed-list-item",
+                "overItemCls": "feed-list-item-hover",
+                "singleSelect": true,
+                "store": "FeedStore",
+                "trackOver": true,
+                "designer|userClassName": "MyView"
+            },
+            "customConfigs": []
+        }
+    ]
+}

@@ -1,0 +1,18 @@
+{
+    "id": "ExtBox1-ext-gen6064",
+    "type": "store",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "storeId": "MyStore",
+        "model": "Feed",
+        "data": "[{\n                title: 'Sencha Blog',\n                url: 'http://feeds.feedburner.com/extblog'\n            }, {\n                title: 'Sencha Forums',\n                url: 'http://sencha.com/forum/external.php?type=RSS2'\n            }, {\n                title: 'Ajaxian',\n                url: 'http://feeds.feedburner.com/ajaxian'\n            }]",
+        "designer|userClassName": "FeedStore"
+    },
+    "customConfigs": [],
+    "designerId": "f3e12d72-b301-4ba2-9484-afed23aa6830",
+    "$viewOrder": 0
+}
