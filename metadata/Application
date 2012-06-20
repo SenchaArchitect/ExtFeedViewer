@@ -1,0 +1,76 @@
+{
+    "id": "ExtBox1-ext-gen2081",
+    "type": "application",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "models": [
+            "Feed",
+            "FeedItem"
+        ],
+        "stores": [
+            "FeedStore",
+            "FeedItemStore",
+            "DefaultFeedsStore"
+        ],
+        "views": [
+            "MyViewport",
+            "FeedPanel",
+            "FeedDetail",
+            "FeedGrid",
+            "FeedPost",
+            "FeedInfo",
+            "FeedWindow"
+        ],
+        "autoCreateViewport": true,
+        "name": "MyApp",
+        "controllers": [
+            "FeedController"
+        ]
+    },
+    "customConfigs": [],
+    "designerId": "application",
+    "$viewOrder": 0,
+    "iconCls": "icon-application",
+    "cn": [
+        {
+            "id": "ExtBox1-ext-gen8319",
+            "type": "fixedfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "launch",
+                "implHandler": [
+                    "Ext.syncRequire([",
+                    "    'Ext.ux.PreviewPlugin'",
+                    "]);"
+                ],
+                "designer|userClassName": "launch"
+            },
+            "customConfigs": [],
+            "iconCls": "icon-basic-function"
+        },
+        {
+            "id": "ExtBox1-ext-gen45623",
+            "type": "loader",
+            "reference": {
+                "name": "loader",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "enabled": true,
+                "paths": "{\"Ext.ux\":\"ux/\"}",
+                "designer|userClassName": "Loader"
+            },
+            "customConfigs": [],
+            "iconCls": "icon-loader"
+        }
+    ]
+}

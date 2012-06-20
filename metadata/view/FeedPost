@@ -1,0 +1,62 @@
+{
+    "id": "ExtBox1-ext-gen6355",
+    "type": "panel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "border": null,
+        "cls": "preview",
+        "height": null,
+        "width": null,
+        "autoScroll": true,
+        "title": null,
+        "designer|userClassName": "FeedPost",
+        "designer|userAlias": "feedpost"
+    },
+    "customConfigs": [],
+    "designerId": "7067e8e9-8049-4d34-b6d9-8ed2bb34dd81",
+    "$viewOrder": 5,
+    "cn": [
+        {
+            "id": "ExtBox1-ext-gen51534",
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "createToolbar",
+                "implHandler": [
+                    "var items = [],",
+                    "    config = {};",
+                    "",
+                    "if (!this.inTab) {",
+                    "    items.push({",
+                    "        itemId: 'viewintab',",
+                    "        text: 'View in new tab',",
+                    "        iconCls: 'tab-new'",
+                    "    }, '-');",
+                    "} else {",
+                    "    config.cls = 'x-docked-noborder-top';",
+                    "}",
+                    "",
+                    "items.push({",
+                    "    itemId: 'gotopost',",
+                    "    text: 'Go to post',",
+                    "    iconCls: 'post-go'",
+                    "});",
+                    "",
+                    "config.items = items;",
+                    "",
+                    "return Ext.create('widget.toolbar', config);"
+                ],
+                "designer|userClassName": "createToolbar"
+            },
+            "customConfigs": []
+        }
+    ]
+}

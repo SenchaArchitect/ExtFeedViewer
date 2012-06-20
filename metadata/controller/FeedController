@@ -1,0 +1,692 @@
+{
+    "id": "ExtBox1-ext-gen7422",
+    "type": "controller",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "FeedController"
+    },
+    "customConfigs": [],
+    "designerId": "68141c8e-578f-4b49-b1c0-e140070964e7",
+    "$viewOrder": 0,
+    "cn": [
+        {
+            "id": "ExtBox1-ext-gen5113",
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "onDataviewSelectionChange",
+                "implHandler": [
+                    "var removeButton = this.getFeedPanel().down('#remove');",
+                    "",
+                    "removeButton.setDisabled(!selections.length);",
+                    "",
+                    "if (selections.length > 0) {",
+                    "    this.loadFeed(selections[0]);",
+                    "}"
+                ],
+                "name": "selectionchange",
+                "scope": "me",
+                "designer|targetType": "Ext.view.View",
+                "designer|controlQuery": "#feedpanel #dataview",
+                "designer|userClassName": "onDataviewSelectionChange"
+            },
+            "customConfigs": []
+        },
+        {
+            "id": "ExtBox1-ext-gen6370",
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "loadFeed",
+                "designer|params": [
+                    "feed"
+                ],
+                "implHandler": [
+                    "var feedInfo = this.getFeedInfo(),",
+                    "    active = feedInfo.items.first(),",
+                    "    feedTitle = feed.get('title'),",
+                    "    feedUrl = feed.get('url');",
+                    "",
+                    "if (!active) {",
+                    "    feedInfo.add({",
+                    "        xtype: 'feeddetail',",
+                    "        title: feedTitle,",
+                    "        url: feedUrl",
+                    "    });",
+                    "} else {",
+                    "    active.loadFeed(feedUrl);",
+                    "    active.tab.setText(feedTitle);",
+                    "}",
+                    "",
+                    "feedInfo.setActiveTab(active);"
+                ],
+                "designer|userClassName": "loadFeed"
+            },
+            "customConfigs": []
+        },
+        {
+            "id": "ExtBox1-ext-gen7911",
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "onGridpanelSelectionChange",
+                "implHandler": [
+                    "if (selections.length > 0) {",
+                    "    this.loadPost(selections[0]);",
+                    "}"
+                ],
+                "name": "selectionchange",
+                "scope": "me",
+                "designer|targetType": "Ext.grid.Panel",
+                "designer|controlQuery": "#feedgrid",
+                "designer|userClassName": "onGridpanelSelectionChange"
+            },
+            "customConfigs": []
+        },
+        {
+            "id": "ExtBox1-ext-gen8716",
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "loadPost",
+                "designer|params": [
+                    "post"
+                ],
+                "implHandler": [
+                    "var feedPost = this.getFeedPost();",
+                    "",
+                    "feedPost.active = post;",
+                    "feedPost.update(post.data);"
+                ],
+                "designer|userClassName": "loadPost"
+            },
+            "customConfigs": []
+        },
+        {
+            "id": "ExtBox1-ext-gen29497",
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "markInvalid",
+                "implHandler": [
+                    "this.getFeedForm().setLoading(false);",
+                    "this.getFeedUrl().markInvalid('The URL specified is not a valid RSS2 feed.');"
+                ],
+                "designer|userClassName": "markInvalid"
+            },
+            "customConfigs": []
+        },
+        {
+            "id": "ExtBox1-ext-gen31103",
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "validateFeed",
+                "designer|params": [
+                    "response"
+                ],
+                "implHandler": [
+                    "this.getFeedForm().setLoading(false);",
+                    "        ",
+                    "var dq = Ext.DomQuery,",
+                    "    url = this.getFeedUrl().getValue(),",
+                    "    xml,",
+                    "    channel,",
+                    "    title,",
+                    "    rec;",
+                    "",
+                    "try {",
+                    "    xml = response.responseXML;",
+                    "    channel = xml.getElementsByTagName('channel')[0];",
+                    "    if (channel) {",
+                    "        title = dq.selectValue('title', channel, url);",
+                    "        ",
+                    "        rec = Ext.getStore('FeedStore').add({",
+                    "            url: url,",
+                    "            title: title",
+                    "        })[0];",
+                    "        this.animateNode(this.getFeedPanelView().getNode(rec), 0, 1);",
+                    "        ",
+                    "        this.getFeedWindow().destroy();",
+                    "        return;",
+                    "    }",
+                    "} catch(e) {",
+                    "}",
+                    "this.markInvalid();"
+                ],
+                "designer|userClassName": "validateFeed"
+            },
+            "customConfigs": []
+        },
+        {
+            "id": "ExtBox1-ext-gen32882",
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "animateNode",
+                "designer|params": [
+                    "el",
+                    "start",
+                    "end",
+                    "listeners"
+                ],
+                "implHandler": [
+                    "Ext.create('Ext.fx.Anim', {",
+                    "    target: Ext.get(el),",
+                    "    duration: 500,",
+                    "    from: {",
+                    "        opacity: start",
+                    "    },",
+                    "    to: {",
+                    "        opacity: end",
+                    "    },",
+                    "    listeners: listeners",
+                    "});"
+                ],
+                "designer|userClassName": "animateNode"
+            },
+            "customConfigs": []
+        },
+        {
+            "id": "ExtBox1-ext-gen41954",
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "onTabOpen",
+                "designer|params": [
+                    "post",
+                    "rec"
+                ],
+                "implHandler": [
+                    "var feedInfo = this.getFeedInfo(),",
+                    "    items = [],",
+                    "    item;",
+                    "",
+                    "if (Ext.isArray(rec)) {",
+                    "    Ext.each(rec, function(rec) {",
+                    "        items.push({",
+                    "            inTab: true,",
+                    "            xtype: 'feedpost',",
+                    "            title: rec.get('title'),",
+                    "            closable: true,",
+                    "            data: rec.data,",
+                    "            active: rec",
+                    "        });",
+                    "    });",
+                    "    feedInfo.add(items);",
+                    "} else {",
+                    "    item = feedInfo.add({",
+                    "        inTab: true,",
+                    "        xtype: 'feedpost',",
+                    "        title: rec.get('title'),",
+                    "        closable: true,",
+                    "        data: rec.data,",
+                    "        active: rec",
+                    "    });",
+                    "    feedInfo.setActiveTab(item);",
+                    "}"
+                ],
+                "designer|userClassName": "onTabOpen"
+            },
+            "customConfigs": []
+        },
+        {
+            "id": "ExtBox1-ext-gen6544",
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "ref": "feedPanel",
+                "selector": "feedpanel",
+                "designer|userClassName": "feedPanel"
+            },
+            "customConfigs": []
+        },
+        {
+            "id": "ExtBox1-ext-gen7273",
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "ref": "feedInfo",
+                "selector": "feedinfo",
+                "designer|userClassName": "feedInfo"
+            },
+            "customConfigs": []
+        },
+        {
+            "id": "ExtBox1-ext-gen8964",
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "ref": "feedPost",
+                "selector": "#feedpost",
+                "designer|userClassName": "feedPost"
+            },
+            "customConfigs": []
+        },
+        {
+            "id": "ExtBox1-ext-gen10119",
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "onDataviewViewReady",
+                "implHandler": [
+                    "abstractview.getSelectionModel().select(abstractview.store.first());"
+                ],
+                "name": "viewready",
+                "scope": "me",
+                "designer|targetType": "Ext.view.View",
+                "designer|controlQuery": "#feedpanel dataview",
+                "designer|userClassName": "onDataviewViewReady"
+            },
+            "customConfigs": []
+        },
+        {
+            "id": "ExtBox1-ext-gen15873",
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "onOpenAddFeedWindow",
+                "implHandler": [
+                    "var win = Ext.create('widget.feedwindow');",
+                    "win.show();"
+                ],
+                "name": "click",
+                "scope": "me",
+                "designer|targetType": "Ext.button.Button",
+                "designer|controlQuery": "#feedpanel #add",
+                "designer|userClassName": "onOpenAddFeedWindow"
+            },
+            "customConfigs": []
+        },
+        {
+            "id": "ExtBox1-ext-gen26733",
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "onFeedWindowCancel",
+                "implHandler": [
+                    "this.getFeedWindow().destroy();"
+                ],
+                "name": "click",
+                "scope": "me",
+                "designer|targetType": "Ext.button.Button",
+                "designer|controlQuery": "feedwindow #cancel",
+                "designer|userClassName": "onFeedWindowCancel"
+            },
+            "customConfigs": []
+        },
+        {
+            "id": "ExtBox1-ext-gen27146",
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "ref": "feedWindow",
+                "selector": "feedwindow",
+                "designer|userClassName": "feedWindow"
+            },
+            "customConfigs": []
+        },
+        {
+            "id": "ExtBox1-ext-gen28036",
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "onAddFeed",
+                "implHandler": [
+                    "var url = this.getFeedUrl().getValue();",
+                    "this.getFeedForm().setLoading({",
+                    "    msg: 'Validating feed...'",
+                    "});",
+                    "",
+                    "Ext.Ajax.request({",
+                    "    url: 'feed-proxy.php',",
+                    "    params: {",
+                    "        feed: url",
+                    "    },",
+                    "    success: this.validateFeed,",
+                    "    failure: this.markInvalid,",
+                    "    scope: this",
+                    "});"
+                ],
+                "name": "click",
+                "scope": "me",
+                "designer|targetType": "Ext.button.Button",
+                "designer|controlQuery": "feedwindow #add",
+                "designer|userClassName": "onAddFeed"
+            },
+            "customConfigs": []
+        },
+        {
+            "id": "ExtBox1-ext-gen28847",
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "ref": "feedUrl",
+                "selector": "feedwindow #feed",
+                "designer|userClassName": "feedUrl"
+            },
+            "customConfigs": []
+        },
+        {
+            "id": "ExtBox1-ext-gen29921",
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "ref": "feedForm",
+                "selector": "feedwindow #form",
+                "designer|userClassName": "feedForm"
+            },
+            "customConfigs": []
+        },
+        {
+            "id": "ExtBox1-ext-gen33730",
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "ref": "feedPanelView",
+                "selector": "feedpanel #dataview",
+                "designer|userClassName": "feedPanelView"
+            },
+            "customConfigs": []
+        },
+        {
+            "id": "ExtBox1-ext-gen34050",
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "onRemoveFeed",
+                "implHandler": [
+                    "var view = this.getFeedPanelView(),",
+                    "    active = view.getSelectionModel().getSelection()[0];",
+                    "",
+                    "this.animateNode(view.getNode(active), 1, 0, {",
+                    "    scope: this,",
+                    "    afteranimate: function() {",
+                    "        view.store.remove(active);",
+                    "        view.getSelectionModel().select(view.store.first());",
+                    "    }",
+                    "});",
+                    "",
+                    ""
+                ],
+                "name": "click",
+                "scope": "me",
+                "designer|targetType": "Ext.button.Button",
+                "designer|controlQuery": "feedpanel #remove",
+                "designer|userClassName": "onRemoveFeed"
+            },
+            "customConfigs": []
+        },
+        {
+            "id": "ExtBox1-ext-gen35591",
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "onSummaryToggle",
+                "implHandler": [
+                    "button.up('feedgrid').down('#view').getPlugin('preview').toggleExpanded(pressed);"
+                ],
+                "name": "toggle",
+                "scope": "me",
+                "designer|targetType": "Ext.button.Button",
+                "designer|controlQuery": "feedgrid #summary",
+                "designer|userClassName": "onSummaryToggle"
+            },
+            "customConfigs": []
+        },
+        {
+            "id": "ExtBox1-ext-gen38411",
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "onReadingPaneChange",
+                "implHandler": [
+                    "var east = cycle.up('feeddetail').down('#east'),",
+                    "    south = cycle.up('feeddetail').down('#south'),",
+                    "    display = cycle.up('feeddetail').down('feedpost');",
+                    "",
+                    "switch (item.text) {",
+                    "    case 'Bottom':",
+                    "        east.hide();",
+                    "        south.show();",
+                    "        south.add(display);",
+                    "        break;",
+                    "    case 'Right':",
+                    "        south.hide();",
+                    "        east.show();",
+                    "        east.add(display);",
+                    "        break;",
+                    "    default:",
+                    "        south.hide();",
+                    "        east.hide();",
+                    "        break;",
+                    "}"
+                ],
+                "name": "change",
+                "scope": "me",
+                "designer|targetType": "Ext.button.Cycle",
+                "designer|controlQuery": "feedgrid #readingpane",
+                "designer|userClassName": "onReadingPaneChange"
+            },
+            "customConfigs": []
+        },
+        {
+            "id": "ExtBox1-ext-gen41423",
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "onOpenAll",
+                "implHandler": [
+                    "this.onTabOpen(null, Ext.getStore('FeedItemStore').getRange());"
+                ],
+                "name": "click",
+                "scope": "me",
+                "designer|targetType": "Ext.button.Button",
+                "designer|controlQuery": "feedgrid #openall",
+                "designer|userClassName": "onOpenAll"
+            },
+            "customConfigs": []
+        },
+        {
+            "id": "ExtBox1-ext-gen44060",
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "onDataviewItemDblClick",
+                "implHandler": [
+                    "this.onTabOpen(null, record);"
+                ],
+                "name": "itemdblclick",
+                "scope": "me",
+                "designer|targetType": "Ext.grid.Panel",
+                "designer|controlQuery": "#feedgrid",
+                "designer|userClassName": "onDataviewItemDblClick"
+            },
+            "customConfigs": []
+        },
+        {
+            "id": "ExtBox1-ext-gen50316",
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "ref": "feedGridView",
+                "selector": "feedgrid #view",
+                "designer|userClassName": "feedGridView"
+            },
+            "customConfigs": []
+        },
+        {
+            "id": "ExtBox1-ext-gen49137",
+            "type": "fixedfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "init",
+                "designer|params": [
+                    "application"
+                ],
+                "implHandler": [
+                    "Ext.getStore('FeedItemStore').on('load', function() {",
+                    "    this.getFeedGridView().getSelectionModel().select(0);",
+                    "}, this);"
+                ],
+                "designer|userClassName": "init"
+            },
+            "customConfigs": [],
+            "iconCls": "icon-basic-function"
+        },
+        {
+            "id": "ExtBox1-ext-gen52940",
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "onGotoPostClick",
+                "implHandler": [
+                    "var post = button.up('feedpost');",
+                    "",
+                    "window.open(post.active.get('link'));"
+                ],
+                "name": "click",
+                "scope": "me",
+                "designer|targetType": "Ext.button.Button",
+                "designer|controlQuery": "feedpost #gotopost",
+                "designer|userClassName": "onGotoPostClick"
+            },
+            "customConfigs": []
+        },
+        {
+            "id": "ExtBox1-ext-gen54290",
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "onViewInTabClick",
+                "implHandler": [
+                    "var post = button.up('feedpost');",
+                    "",
+                    "this.onTabOpen(post, post.active);"
+                ],
+                "name": "click",
+                "scope": "me",
+                "designer|targetType": "Ext.button.Button",
+                "designer|controlQuery": "feedpost #viewintab",
+                "designer|userClassName": "onViewInTabClick"
+            },
+            "customConfigs": []
+        }
+    ]
+}

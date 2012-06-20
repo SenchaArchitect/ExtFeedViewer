@@ -1,0 +1,64 @@
+{
+    "id": "ExtBox1-ext-gen17619",
+    "type": "store",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "storeId": "FeedItemStore",
+        "model": "FeedItem",
+        "designer|userClassName": "FeedItemStore"
+    },
+    "customConfigs": [],
+    "designerId": "91af3be2-a1de-4a58-9dd1-c19bccd5fef7",
+    "$viewOrder": 1,
+    "cn": [
+        {
+            "id": "ExtBox1-ext-gen17872",
+            "type": "ajaxproxy",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "url": "feed-proxy.php",
+                "designer|userClassName": "MyAjaxProxy"
+            },
+            "customConfigs": [],
+            "cn": [
+                {
+                    "id": "ExtBox1-ext-gen18656",
+                    "type": "xmlreader",
+                    "reference": {
+                        "name": "reader",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "record": "item",
+                        "designer|userClassName": "MyXmlReader"
+                    },
+                    "customConfigs": []
+                }
+            ]
+        },
+        {
+            "id": "ExtBox1-ext-gen18255",
+            "type": "sorter",
+            "reference": {
+                "name": "sorters",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "direction": "DESC",
+                "property": "pubDate",
+                "designer|userClassName": "MySorter"
+            },
+            "customConfigs": []
+        }
+    ]
+}
