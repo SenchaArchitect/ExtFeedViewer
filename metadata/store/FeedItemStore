@@ -1,5 +1,4 @@
 {
-    "id": "ExtBox1-ext-gen17619",
     "type": "store",
     "reference": {
         "name": "items",
@@ -7,16 +6,14 @@
     },
     "codeClass": null,
     "userConfig": {
+        "designer|userClassName": "FeedItemStore",
         "storeId": "FeedItemStore",
-        "model": "FeedItem",
-        "designer|userClassName": "FeedItemStore"
+        "model": "FeedItem"
     },
-    "customConfigs": [],
+    "id": "ExtBox1-ext-gen17619",
     "designerId": "91af3be2-a1de-4a58-9dd1-c19bccd5fef7",
-    "$viewOrder": 1,
     "cn": [
         {
-            "id": "ExtBox1-ext-gen17872",
             "type": "ajaxproxy",
             "reference": {
                 "name": "proxy",
@@ -24,13 +21,11 @@
             },
             "codeClass": null,
             "userConfig": {
-                "url": "feed-proxy.php",
-                "designer|userClassName": "MyAjaxProxy"
+                "designer|userClassName": "MyAjaxProxy",
+                "url": "feed-proxy.php"
             },
-            "customConfigs": [],
             "cn": [
                 {
-                    "id": "ExtBox1-ext-gen18656",
                     "type": "xmlreader",
                     "reference": {
                         "name": "reader",
@@ -38,15 +33,13 @@
                     },
                     "codeClass": null,
                     "userConfig": {
-                        "record": "item",
-                        "designer|userClassName": "MyXmlReader"
-                    },
-                    "customConfigs": []
+                        "designer|userClassName": "MyXmlReader",
+                        "record": "item"
+                    }
                 }
             ]
         },
         {
-            "id": "ExtBox1-ext-gen18255",
             "type": "sorter",
             "reference": {
                 "name": "sorters",
@@ -54,11 +47,10 @@
             },
             "codeClass": null,
             "userConfig": {
+                "designer|userClassName": "MySorter",
                 "direction": "DESC",
-                "property": "pubDate",
-                "designer|userClassName": "MySorter"
-            },
-            "customConfigs": []
+                "property": "pubDate"
+            }
         }
     ]
 }

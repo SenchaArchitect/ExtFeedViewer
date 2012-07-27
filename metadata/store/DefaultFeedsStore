@@ -1,5 +1,4 @@
 {
-    "id": "ExtBox1-ext-gen21253",
     "type": "store",
     "reference": {
         "name": "items",
@@ -7,18 +6,16 @@
     },
     "codeClass": null,
     "userConfig": {
+        "designer|userClassName": "DefaultFeedsStore",
         "autoLoad": true,
         "autoSync": true,
         "storeId": "DefaultFeedsStore",
-        "data": "[{url:'http://rss.cnn.com/rss/edition.rss', title:'CNN Top Stories'},{url:'http://sports.espn.go.com/espn/rss/news', title:'ESPN Top News'},{url:'http://news.google.com/news?ned=us&topic=t&output=rss', title:'Sci/Tech - Google News'},{url:'http://rss.news.yahoo.com/rss/software', title:'Yahoo Software News'}]",
-        "designer|userClassName": "DefaultFeedsStore"
+        "data": "[{url:'http://rss.cnn.com/rss/edition.rss', title:'CNN Top Stories'},{url:'http://sports.espn.go.com/espn/rss/news', title:'ESPN Top News'},{url:'http://news.google.com/news?ned=us&topic=t&output=rss', title:'Sci/Tech - Google News'},{url:'http://rss.news.yahoo.com/rss/software', title:'Yahoo Software News'}]"
     },
-    "customConfigs": [],
+    "id": "ExtBox1-ext-gen21253",
     "designerId": "16a083db-7161-48f8-93d8-8ffa3ea34203",
-    "$viewOrder": 2,
     "cn": [
         {
-            "id": "ExtBox1-ext-gen21472",
             "type": "datafield",
             "reference": {
                 "name": "fields",
@@ -26,13 +23,11 @@
             },
             "codeClass": null,
             "userConfig": {
-                "name": "url",
-                "designer|userClassName": "MyField10"
-            },
-            "customConfigs": []
+                "designer|userClassName": "MyField10",
+                "name": "url"
+            }
         },
         {
-            "id": "ExtBox1-ext-gen21618",
             "type": "datafield",
             "reference": {
                 "name": "fields",
@@ -40,10 +35,9 @@
             },
             "codeClass": null,
             "userConfig": {
-                "name": "title",
-                "designer|userClassName": "MyField11"
-            },
-            "customConfigs": []
+                "designer|userClassName": "MyField11",
+                "name": "title"
+            }
         }
     ]
 }

@@ -34,6 +34,7 @@ Ext.define('MyApp.view.FeedWindow', {
                     items: [
                         {
                             xtype: 'combobox',
+                            anchor: '100%',
                             itemId: 'feed',
                             fieldLabel: 'Enter the URL of the feed to add',
                             labelAlign: 'top',
@@ -42,8 +43,7 @@ Ext.define('MyApp.view.FeedWindow', {
                             displayField: 'title',
                             queryMode: 'local',
                             store: 'DefaultFeedsStore',
-                            valueField: 'url',
-                            anchor: '100%'
+                            valueField: 'url'
                         }
                     ]
                 }
@@ -51,6 +51,7 @@ Ext.define('MyApp.view.FeedWindow', {
             dockedItems: [
                 {
                     xtype: 'container',
+                    dock: 'bottom',
                     height: 24,
                     margin: 8,
                     layout: {
@@ -58,7 +59,6 @@ Ext.define('MyApp.view.FeedWindow', {
                         pack: 'end',
                         type: 'hbox'
                     },
-                    dock: 'bottom',
                     items: [
                         {
                             xtype: 'button',

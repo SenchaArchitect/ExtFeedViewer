@@ -3,21 +3,21 @@
     "settings": {
         "urlPrefix": "",
         "spacesToIndent": 4,
-        "codeGenFormat": "Class",
         "exportPath": "",
-        "extPath": "http://extjs.cachefly.net/ext-4.0.7-commercial/",
-        "senchaIoKey": "",
-        "senchaIoPath": "http://extjs.cachefly.net/designer/IO/",
         "lineEnding": "LF",
-        "instantiateStore": true,
         "genTimestamps": false,
         "cacheBust": false,
+        "codeGenFormat": "Class",
+        "senchaIoKey": "",
+        "senchaIoPath": "http://extjs.cachefly.net/designer/IO/",
+        "instantiateStore": true,
         "saveOnDeploy": false,
-        "appName": "MyApp",
-        "mapsAPI": "http://maps.google.com/maps/api/js?sensor=true"
+        "appName": "MyApp"
     },
     "xdsVersion": "2.0.0",
-    "xdsBuild": "499",
+    "xdsBuild": 550,
+    "schemaVersion": 1,
+    "upgradeVersion": 210000000495,
     "framework": "ext40",
     "topInstanceFileMap": {
         "29c25f5d-cff4-4199-951d-e3a1dfddcc12": {
@@ -130,6 +130,42 @@
                 "metadata/resource/css"
             ],
             "className": "css"
+        },
+        "a54fe668-0184-4721-bdc3-d27c53c65bb9": {
+            "paths": [
+                "metadata/resource/Library"
+            ],
+            "className": "Library"
         }
+    },
+    "viewOrderMap": {
+        "view": [
+            "3f0846b9-bddf-471e-a17b-95cb5de14e54",
+            "7067e8e9-8049-4d34-b6d9-8ed2bb34dd81",
+            "19737a33-9c3a-4c90-b562-0ff17c79e914",
+            "b083da5f-2aca-42d4-b9b5-016a581ea465",
+            "c84fb3e7-80ad-4f16-b5ff-73aed7162ce4",
+            "800053d2-01bc-4ec9-89d3-437e0dd821bc",
+            "29c25f5d-cff4-4199-951d-e3a1dfddcc12"
+        ],
+        "store": [
+            "f3e12d72-b301-4ba2-9484-afed23aa6830",
+            "91af3be2-a1de-4a58-9dd1-c19bccd5fef7",
+            "16a083db-7161-48f8-93d8-8ffa3ea34203"
+        ],
+        "controller": [
+            "68141c8e-578f-4b49-b1c0-e140070964e7"
+        ],
+        "model": [
+            "bae4018f-44b7-474a-9290-298f3814dd81",
+            "3f6c3bf2-72c0-4f3a-a351-f1a663a6a543"
+        ],
+        "resource": [
+            "a54fe668-0184-4721-bdc3-d27c53c65bb9",
+            "6634f12a-0d03-419c-8b02-59d383cb88eb"
+        ],
+        "app": [
+            "application"
+        ]
     }
 }

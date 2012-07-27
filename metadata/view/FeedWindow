@@ -1,5 +1,4 @@
 {
-    "id": "ExtBox1-ext-gen14744",
     "type": "window",
     "reference": {
         "name": "items",
@@ -7,20 +6,18 @@
     },
     "codeClass": null,
     "userConfig": {
+        "designer|userClassName": "FeedWindow",
+        "designer|userAlias": "feedwindow",
         "height": null,
         "width": 500,
         "iconCls": "feed",
         "title": "Add Feed",
-        "plain": true,
-        "designer|userClassName": "FeedWindow",
-        "designer|userAlias": "feedwindow"
+        "plain": true
     },
-    "customConfigs": [],
+    "id": "ExtBox1-ext-gen14744",
     "designerId": "800053d2-01bc-4ec9-89d3-437e0dd821bc",
-    "$viewOrder": 6,
     "cn": [
         {
-            "id": "ExtBox1-ext-gen17471",
             "type": "form",
             "reference": {
                 "name": "items",
@@ -28,15 +25,13 @@
             },
             "codeClass": null,
             "userConfig": {
+                "designer|userClassName": "MyForm",
                 "itemId": "form",
                 "bodyPadding": "12 10 10",
-                "title": null,
-                "designer|userClassName": "MyForm"
+                "title": null
             },
-            "customConfigs": [],
             "cn": [
                 {
-                    "id": "ExtBox1-ext-gen17769",
                     "type": "combobox",
                     "reference": {
                         "name": "items",
@@ -44,6 +39,8 @@
                     },
                     "codeClass": null,
                     "userConfig": {
+                        "layout|anchor": "100%",
+                        "designer|userClassName": "MyComboBox",
                         "itemId": "feed",
                         "fieldLabel": "Enter the URL of the feed to add",
                         "labelAlign": "top",
@@ -52,16 +49,12 @@
                         "displayField": "title",
                         "queryMode": "local",
                         "store": "DefaultFeedsStore",
-                        "valueField": "url",
-                        "designer|userClassName": "MyComboBox",
-                        "layout|anchor": "100%"
-                    },
-                    "customConfigs": []
+                        "valueField": "url"
+                    }
                 }
             ]
         },
         {
-            "id": "ExtBox1-ext-gen24220",
             "type": "container",
             "reference": {
                 "name": "dockedItems",
@@ -69,21 +62,19 @@
             },
             "codeClass": null,
             "userConfig": {
-                "height": 24,
-                "margin": 8,
-                "padding": null,
-                "layout": "hbox",
-                "designer|userClassName": "MyContainer1",
+                "dock": "bottom",
                 "container|align": "stretch",
                 "container|defaultMargins": null,
                 "container|pack": "end",
                 "container|padding": null,
-                "dock": "bottom"
+                "designer|userClassName": "MyContainer1",
+                "height": 24,
+                "margin": 8,
+                "padding": null,
+                "layout": "hbox"
             },
-            "customConfigs": [],
             "cn": [
                 {
-                    "id": "ExtBox1-ext-gen24387",
                     "type": "button",
                     "reference": {
                         "name": "items",
@@ -91,15 +82,13 @@
                     },
                     "codeClass": null,
                     "userConfig": {
+                        "designer|userClassName": "MyButton4",
                         "itemId": "add",
                         "width": 80,
-                        "text": "Add Feed",
-                        "designer|userClassName": "MyButton4"
-                    },
-                    "customConfigs": []
+                        "text": "Add Feed"
+                    }
                 },
                 {
-                    "id": "ExtBox1-ext-gen24555",
                     "type": "button",
                     "reference": {
                         "name": "items",
@@ -107,13 +96,12 @@
                     },
                     "codeClass": null,
                     "userConfig": {
+                        "designer|userClassName": "MyButton5",
                         "itemId": "cancel",
                         "margin": "0 0 0 4",
                         "width": 80,
-                        "text": "Cancel",
-                        "designer|userClassName": "MyButton5"
-                    },
-                    "customConfigs": []
+                        "text": "Cancel"
+                    }
                 }
             ]
         }

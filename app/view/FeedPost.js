@@ -49,6 +49,7 @@ Ext.define('MyApp.view.FeedPost', {
         config.items = items;
 
         return Ext.create('widget.toolbar', config);
+
     }
 
 });

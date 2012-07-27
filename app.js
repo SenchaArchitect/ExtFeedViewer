@@ -21,11 +21,11 @@ Ext.Loader.setConfig({
 });
 
 Ext.application({
+
     requires: [
         'MyApp.view.override.FeedGrid',
         'MyApp.view.override.FeedPost'
     ],
-
     models: [
         'Feed',
         'FeedItem'
@@ -54,6 +54,7 @@ Ext.application({
         Ext.syncRequire([
         'Ext.ux.PreviewPlugin'
         ]);
+
     }
 
 });

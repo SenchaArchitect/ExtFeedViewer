@@ -1,5 +1,4 @@
 {
-    "id": "ExtBox1-ext-gen5054",
     "type": "tabpanel",
     "reference": {
         "name": "items",
@@ -7,13 +6,12 @@
     },
     "codeClass": null,
     "userConfig": {
+        "designer|userClassName": "FeedInfo",
+        "designer|userAlias": "feedinfo",
         "height": null,
         "width": null,
-        "activeTab": 0,
-        "designer|userClassName": "FeedInfo",
-        "designer|userAlias": "feedinfo"
+        "activeTab": 0
     },
-    "customConfigs": [],
-    "designerId": "b083da5f-2aca-42d4-b9b5-016a581ea465",
-    "$viewOrder": 2
+    "id": "ExtBox1-ext-gen5054",
+    "designerId": "b083da5f-2aca-42d4-b9b5-016a581ea465"
 }
