@@ -16,6 +16,7 @@
 Ext.define('MyApp.view.FeedDetail', {
     extend: 'Ext.panel.Panel',
     alias: 'widget.feeddetail',
+
     requires: [
         'MyApp.view.FeedGrid',
         'MyApp.view.FeedPost'
@@ -46,14 +47,14 @@ Ext.define('MyApp.view.FeedDetail', {
                 },
                 {
                     xtype: 'container',
+                    flex: 2,
+                    region: 'south',
+                    split: true,
                     itemId: 'south',
                     minHeight: 150,
                     layout: {
                         type: 'fit'
                     },
-                    flex: 2,
-                    region: 'south',
-                    split: true,
                     items: [
                         {
                             xtype: 'feedpost',
@@ -63,15 +64,15 @@ Ext.define('MyApp.view.FeedDetail', {
                 },
                 {
                     xtype: 'container',
+                    flex: 1,
+                    region: 'east',
+                    split: true,
                     hidden: true,
                     itemId: 'east',
                     minWidth: 150,
                     layout: {
                         type: 'fit'
-                    },
-                    flex: 1,
-                    region: 'east',
-                    split: true
+                    }
                 }
             ]
         });
@@ -81,12 +82,14 @@ Ext.define('MyApp.view.FeedDetail', {
 
     onPanelAdded: function(abstractcomponent, container, pos, options) {
         this.loadFeed(this.url);
+
     },
 
     loadFeed: function(url) {
         this.url = url;
 
         this.down('#feedgrid').loadFeed(url);
+
     }
 
 });

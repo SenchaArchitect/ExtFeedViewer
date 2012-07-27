@@ -1,5 +1,4 @@
 {
-    "id": "ExtBox1-ext-gen5568",
     "type": "datamodel",
     "reference": {
         "name": "items",
@@ -9,12 +8,10 @@
     "userConfig": {
         "designer|userClassName": "Feed"
     },
-    "customConfigs": [],
+    "id": "ExtBox1-ext-gen5568",
     "designerId": "bae4018f-44b7-474a-9290-298f3814dd81",
-    "$viewOrder": 0,
     "cn": [
         {
-            "id": "ExtBox1-ext-gen5738",
             "type": "datafield",
             "reference": {
                 "name": "fields",
@@ -22,13 +19,11 @@
             },
             "codeClass": null,
             "userConfig": {
-                "name": "title",
-                "designer|userClassName": "MyField"
-            },
-            "customConfigs": []
+                "designer|userClassName": "MyField",
+                "name": "title"
+            }
         },
         {
-            "id": "ExtBox1-ext-gen5884",
             "type": "datafield",
             "reference": {
                 "name": "fields",
@@ -36,10 +31,9 @@
             },
             "codeClass": null,
             "userConfig": {
-                "name": "url",
-                "designer|userClassName": "MyField1"
-            },
-            "customConfigs": []
+                "designer|userClassName": "MyField1",
+                "name": "url"
+            }
         }
     ]
 }

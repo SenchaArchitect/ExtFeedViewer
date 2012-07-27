@@ -15,6 +15,7 @@
 
 Ext.define('MyApp.view.MyViewport', {
     extend: 'Ext.container.Viewport',
+
     requires: [
         'MyApp.view.FeedPanel',
         'MyApp.view.FeedInfo'

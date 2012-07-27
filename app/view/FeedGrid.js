@@ -27,8 +27,8 @@ Ext.define('MyApp.view.FeedGrid', {
             dockedItems: [
                 {
                     xtype: 'toolbar',
-                    cls: 'x-docked-noborder-top',
                     dock: 'top',
+                    cls: 'x-docked-noborder-top',
                     items: [
                         {
                             xtype: 'button',
@@ -83,6 +83,7 @@ Ext.define('MyApp.view.FeedGrid', {
                     xtype: 'gridcolumn',
                     renderer: function(value, metaData, record, rowIndex, colIndex, store, view) {
                         return Ext.String.format('<div class="topic"><b>{0}</b><span class="author">{1}</span></div>', value, record.get('author') || "Unknown");
+
                     },
                     dataIndex: 'title',
                     flex: 1,
@@ -114,6 +115,7 @@ Ext.define('MyApp.view.FeedGrid', {
                         }
 
                         return Ext.Date.format(value, 'Y/m/d g:i a');
+
                     },
                     width: 200,
                     dataIndex: 'pubDate',
@@ -132,6 +134,7 @@ Ext.define('MyApp.view.FeedGrid', {
         var store = this.store;
         store.getProxy().extraParams.feed = url;
         store.load();
+
     }
 
 });

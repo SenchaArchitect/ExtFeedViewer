@@ -1,5 +1,4 @@
 {
-    "id": "ExtBox1-ext-gen3230",
     "type": "panel",
     "reference": {
         "name": "items",
@@ -7,19 +6,17 @@
     },
     "codeClass": null,
     "userConfig": {
+        "designer|userClassName": "FeedPanel",
+        "designer|userAlias": "feedpanel",
         "layout": "fit",
         "collapseDirection": "left",
         "collapsible": false,
-        "title": "Feeds",
-        "designer|userClassName": "FeedPanel",
-        "designer|userAlias": "feedpanel"
+        "title": "Feeds"
     },
-    "customConfigs": [],
+    "id": "ExtBox1-ext-gen3230",
     "designerId": "c84fb3e7-80ad-4f16-b5ff-73aed7162ce4",
-    "$viewOrder": 1,
     "cn": [
         {
-            "id": "ExtBox1-ext-gen7224",
             "type": "toolbar",
             "reference": {
                 "name": "dockedItems",
@@ -27,15 +24,13 @@
             },
             "codeClass": null,
             "userConfig": {
-                "id": null,
-                "itemId": "toolbar",
+                "dock": "top",
                 "designer|userClassName": "MyToolbar",
-                "dock": "top"
+                "id": null,
+                "itemId": "toolbar"
             },
-            "customConfigs": [],
             "cn": [
                 {
-                    "id": "ExtBox1-ext-gen7888",
                     "type": "button",
                     "reference": {
                         "name": "items",
@@ -43,17 +38,15 @@
                     },
                     "codeClass": null,
                     "userConfig": {
+                        "layout|flex": null,
+                        "designer|userClassName": "MyButton",
                         "id": null,
                         "itemId": "add",
                         "iconCls": "feed-add",
-                        "text": "Add Feed",
-                        "designer|userClassName": "MyButton",
-                        "layout|flex": null
-                    },
-                    "customConfigs": []
+                        "text": "Add Feed"
+                    }
                 },
                 {
-                    "id": "ExtBox1-ext-gen8230",
                     "type": "button",
                     "reference": {
                         "name": "items",
@@ -61,19 +54,17 @@
                     },
                     "codeClass": null,
                     "userConfig": {
+                        "layout|flex": null,
+                        "designer|userClassName": "MyButton1",
                         "disabled": true,
                         "itemId": "remove",
                         "iconCls": "feed-remove",
-                        "text": "Remove Feed",
-                        "designer|userClassName": "MyButton1",
-                        "layout|flex": null
-                    },
-                    "customConfigs": []
+                        "text": "Remove Feed"
+                    }
                 }
             ]
         },
         {
-            "id": "ExtBox1-ext-gen6659",
             "type": "dataview",
             "reference": {
                 "name": "items",
@@ -81,18 +72,33 @@
             },
             "codeClass": null,
             "userConfig": {
+                "designer|userClassName": "MyView",
                 "cls": "feed-list",
                 "id": null,
                 "itemId": "dataview",
-                "tpl": "<tpl for=\".\"><div class=\"feed-list-item\">{title}</div></tpl>",
                 "itemSelector": ".feed-list-item",
                 "overItemCls": "feed-list-item-hover",
                 "singleSelect": true,
                 "store": "FeedStore",
-                "trackOver": true,
-                "designer|userClassName": "MyView"
+                "trackOver": true
             },
-            "customConfigs": []
+            "cn": [
+                {
+                    "type": "template",
+                    "reference": {
+                        "name": "tpl",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|userClassName": "tpl",
+                        "implHandler": [
+                            "<tpl for=\".\"><div class=\"feed-list-item\">{title}</div></tpl>"
+                        ],
+                        "designer|displayName": "tpl"
+                    }
+                }
+            ]
         }
     ]
 }

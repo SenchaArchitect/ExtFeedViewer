@@ -1,5 +1,4 @@
 {
-    "id": "ExtBox1-ext-gen2081",
     "type": "application",
     "reference": {
         "name": "items",
@@ -31,13 +30,11 @@
             "FeedController"
         ]
     },
-    "customConfigs": [],
+    "id": "ExtBox1-ext-gen2081",
     "designerId": "application",
-    "$viewOrder": 0,
     "iconCls": "icon-application",
     "cn": [
         {
-            "id": "ExtBox1-ext-gen8319",
             "type": "fixedfunction",
             "reference": {
                 "name": "items",
@@ -45,19 +42,17 @@
             },
             "codeClass": null,
             "userConfig": {
+                "designer|userClassName": "launch",
                 "fn": "launch",
                 "implHandler": [
                     "Ext.syncRequire([",
                     "    'Ext.ux.PreviewPlugin'",
                     "]);"
-                ],
-                "designer|userClassName": "launch"
+                ]
             },
-            "customConfigs": [],
-            "iconCls": "icon-basic-function"
+            "iconCls": "icon-launch-function"
         },
         {
-            "id": "ExtBox1-ext-gen45623",
             "type": "loader",
             "reference": {
                 "name": "loader",
@@ -65,11 +60,10 @@
             },
             "codeClass": null,
             "userConfig": {
+                "designer|userClassName": "Loader",
                 "enabled": true,
-                "paths": "{\"Ext.ux\":\"ux/\"}",
-                "designer|userClassName": "Loader"
+                "paths": "{\"Ext.ux\":\"ux/\"}"
             },
-            "customConfigs": [],
             "iconCls": "icon-loader"
         }
     ]

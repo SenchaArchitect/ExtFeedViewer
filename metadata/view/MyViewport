@@ -1,5 +1,4 @@
 {
-    "id": "ExtBox1-ext-gen3069",
     "type": "viewport",
     "reference": {
         "name": "items",
@@ -7,18 +6,16 @@
     },
     "codeClass": null,
     "userConfig": {
+        "designer|userClassName": "MyViewport",
         "designer|initialView": true,
         "padding": 5,
         "defaults": null,
-        "layout": "border",
-        "designer|userClassName": "MyViewport"
+        "layout": "border"
     },
-    "customConfigs": [],
+    "id": "ExtBox1-ext-gen3069",
     "designerId": "29c25f5d-cff4-4199-951d-e3a1dfddcc12",
-    "$viewOrder": 0,
     "cn": [
         {
-            "id": "ExtBox1-ext-gen9954",
             "type": "linkedinstance",
             "reference": {
                 "name": "items",
@@ -31,12 +28,10 @@
                 "collapsible": true,
                 "layout|region": "west"
             },
-            "customConfigs": [],
             "iconCls": "icon-linkedinstance",
             "masterInstanceId": "ExtBox1-ext-gen3230"
         },
         {
-            "id": "ExtBox1-ext-gen6342",
             "type": "linkedinstance",
             "reference": {
                 "name": "items",
@@ -48,7 +43,6 @@
                 "layout|margins": "0px 0px 0px 5px",
                 "layout|region": "center"
             },
-            "customConfigs": [],
             "iconCls": "icon-linkedinstance",
             "masterInstanceId": "ExtBox1-ext-gen5054"
         }
