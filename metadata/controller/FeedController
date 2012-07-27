@@ -1,5 +1,4 @@
 {
-    "id": "ExtBox1-ext-gen7422",
     "type": "controller",
     "reference": {
         "name": "items",
@@ -9,12 +8,10 @@
     "userConfig": {
         "designer|userClassName": "FeedController"
     },
-    "customConfigs": [],
+    "id": "ExtBox1-ext-gen7422",
     "designerId": "68141c8e-578f-4b49-b1c0-e140070964e7",
-    "$viewOrder": 0,
     "cn": [
         {
-            "id": "ExtBox1-ext-gen5113",
             "type": "controlleraction",
             "reference": {
                 "name": "listeners",
@@ -22,6 +19,7 @@
             },
             "codeClass": null,
             "userConfig": {
+                "designer|userClassName": "onDataviewSelectionChange",
                 "fn": "onDataviewSelectionChange",
                 "implHandler": [
                     "var removeButton = this.getFeedPanel().down('#remove');",
@@ -35,13 +33,10 @@
                 "name": "selectionchange",
                 "scope": "me",
                 "designer|targetType": "Ext.view.View",
-                "designer|controlQuery": "#feedpanel #dataview",
-                "designer|userClassName": "onDataviewSelectionChange"
-            },
-            "customConfigs": []
+                "designer|controlQuery": "#feedpanel #dataview"
+            }
         },
         {
-            "id": "ExtBox1-ext-gen6370",
             "type": "basicfunction",
             "reference": {
                 "name": "items",
@@ -49,6 +44,7 @@
             },
             "codeClass": null,
             "userConfig": {
+                "designer|userClassName": "loadFeed",
                 "fn": "loadFeed",
                 "designer|params": [
                     "feed"
@@ -71,13 +67,10 @@
                     "}",
                     "",
                     "feedInfo.setActiveTab(active);"
-                ],
-                "designer|userClassName": "loadFeed"
-            },
-            "customConfigs": []
+                ]
+            }
         },
         {
-            "id": "ExtBox1-ext-gen7911",
             "type": "controlleraction",
             "reference": {
                 "name": "listeners",
@@ -85,6 +78,7 @@
             },
             "codeClass": null,
             "userConfig": {
+                "designer|userClassName": "onGridpanelSelectionChange",
                 "fn": "onGridpanelSelectionChange",
                 "implHandler": [
                     "if (selections.length > 0) {",
@@ -94,13 +88,10 @@
                 "name": "selectionchange",
                 "scope": "me",
                 "designer|targetType": "Ext.grid.Panel",
-                "designer|controlQuery": "#feedgrid",
-                "designer|userClassName": "onGridpanelSelectionChange"
-            },
-            "customConfigs": []
+                "designer|controlQuery": "#feedgrid"
+            }
         },
         {
-            "id": "ExtBox1-ext-gen8716",
             "type": "basicfunction",
             "reference": {
                 "name": "items",
@@ -108,6 +99,7 @@
             },
             "codeClass": null,
             "userConfig": {
+                "designer|userClassName": "loadPost",
                 "fn": "loadPost",
                 "designer|params": [
                     "post"
@@ -117,13 +109,10 @@
                     "",
                     "feedPost.active = post;",
                     "feedPost.update(post.data);"
-                ],
-                "designer|userClassName": "loadPost"
-            },
-            "customConfigs": []
+                ]
+            }
         },
         {
-            "id": "ExtBox1-ext-gen29497",
             "type": "basicfunction",
             "reference": {
                 "name": "items",
@@ -131,17 +120,15 @@
             },
             "codeClass": null,
             "userConfig": {
+                "designer|userClassName": "markInvalid",
                 "fn": "markInvalid",
                 "implHandler": [
                     "this.getFeedForm().setLoading(false);",
                     "this.getFeedUrl().markInvalid('The URL specified is not a valid RSS2 feed.');"
-                ],
-                "designer|userClassName": "markInvalid"
-            },
-            "customConfigs": []
+                ]
+            }
         },
         {
-            "id": "ExtBox1-ext-gen31103",
             "type": "basicfunction",
             "reference": {
                 "name": "items",
@@ -149,6 +136,7 @@
             },
             "codeClass": null,
             "userConfig": {
+                "designer|userClassName": "validateFeed",
                 "fn": "validateFeed",
                 "designer|params": [
                     "response"
@@ -181,13 +169,10 @@
                     "} catch(e) {",
                     "}",
                     "this.markInvalid();"
-                ],
-                "designer|userClassName": "validateFeed"
-            },
-            "customConfigs": []
+                ]
+            }
         },
         {
-            "id": "ExtBox1-ext-gen32882",
             "type": "basicfunction",
             "reference": {
                 "name": "items",
@@ -195,6 +180,7 @@
             },
             "codeClass": null,
             "userConfig": {
+                "designer|userClassName": "animateNode",
                 "fn": "animateNode",
                 "designer|params": [
                     "el",
@@ -214,13 +200,10 @@
                     "    },",
                     "    listeners: listeners",
                     "});"
-                ],
-                "designer|userClassName": "animateNode"
-            },
-            "customConfigs": []
+                ]
+            }
         },
         {
-            "id": "ExtBox1-ext-gen41954",
             "type": "basicfunction",
             "reference": {
                 "name": "items",
@@ -228,6 +211,7 @@
             },
             "codeClass": null,
             "userConfig": {
+                "designer|userClassName": "onTabOpen",
                 "fn": "onTabOpen",
                 "designer|params": [
                     "post",
@@ -261,13 +245,10 @@
                     "    });",
                     "    feedInfo.setActiveTab(item);",
                     "}"
-                ],
-                "designer|userClassName": "onTabOpen"
-            },
-            "customConfigs": []
+                ]
+            }
         },
         {
-            "id": "ExtBox1-ext-gen6544",
             "type": "controllerref",
             "reference": {
                 "name": "items",
@@ -275,14 +256,12 @@
             },
             "codeClass": null,
             "userConfig": {
+                "designer|userClassName": "feedPanel",
                 "ref": "feedPanel",
-                "selector": "feedpanel",
-                "designer|userClassName": "feedPanel"
-            },
-            "customConfigs": []
+                "selector": "feedpanel"
+            }
         },
         {
-            "id": "ExtBox1-ext-gen7273",
             "type": "controllerref",
             "reference": {
                 "name": "items",
@@ -290,14 +269,12 @@
             },
             "codeClass": null,
             "userConfig": {
+                "designer|userClassName": "feedInfo",
                 "ref": "feedInfo",
-                "selector": "feedinfo",
-                "designer|userClassName": "feedInfo"
-            },
-            "customConfigs": []
+                "selector": "feedinfo"
+            }
         },
         {
-            "id": "ExtBox1-ext-gen8964",
             "type": "controllerref",
             "reference": {
                 "name": "items",
@@ -305,14 +282,12 @@
             },
             "codeClass": null,
             "userConfig": {
+                "designer|userClassName": "feedPost",
                 "ref": "feedPost",
-                "selector": "#feedpost",
-                "designer|userClassName": "feedPost"
-            },
-            "customConfigs": []
+                "selector": "#feedpost"
+            }
         },
         {
-            "id": "ExtBox1-ext-gen10119",
             "type": "controlleraction",
             "reference": {
                 "name": "listeners",
@@ -320,6 +295,7 @@
             },
             "codeClass": null,
             "userConfig": {
+                "designer|userClassName": "onDataviewViewReady",
                 "fn": "onDataviewViewReady",
                 "implHandler": [
                     "abstractview.getSelectionModel().select(abstractview.store.first());"
@@ -327,13 +303,10 @@
                 "name": "viewready",
                 "scope": "me",
                 "designer|targetType": "Ext.view.View",
-                "designer|controlQuery": "#feedpanel dataview",
-                "designer|userClassName": "onDataviewViewReady"
-            },
-            "customConfigs": []
+                "designer|controlQuery": "#feedpanel dataview"
+            }
         },
         {
-            "id": "ExtBox1-ext-gen15873",
             "type": "controlleraction",
             "reference": {
                 "name": "listeners",
@@ -341,6 +314,7 @@
             },
             "codeClass": null,
             "userConfig": {
+                "designer|userClassName": "onOpenAddFeedWindow",
                 "fn": "onOpenAddFeedWindow",
                 "implHandler": [
                     "var win = Ext.create('widget.feedwindow');",
@@ -349,13 +323,10 @@
                 "name": "click",
                 "scope": "me",
                 "designer|targetType": "Ext.button.Button",
-                "designer|controlQuery": "#feedpanel #add",
-                "designer|userClassName": "onOpenAddFeedWindow"
-            },
-            "customConfigs": []
+                "designer|controlQuery": "#feedpanel #add"
+            }
         },
         {
-            "id": "ExtBox1-ext-gen26733",
             "type": "controlleraction",
             "reference": {
                 "name": "listeners",
@@ -363,6 +334,7 @@
             },
             "codeClass": null,
             "userConfig": {
+                "designer|userClassName": "onFeedWindowCancel",
                 "fn": "onFeedWindowCancel",
                 "implHandler": [
                     "this.getFeedWindow().destroy();"
@@ -370,13 +342,10 @@
                 "name": "click",
                 "scope": "me",
                 "designer|targetType": "Ext.button.Button",
-                "designer|controlQuery": "feedwindow #cancel",
-                "designer|userClassName": "onFeedWindowCancel"
-            },
-            "customConfigs": []
+                "designer|controlQuery": "feedwindow #cancel"
+            }
         },
         {
-            "id": "ExtBox1-ext-gen27146",
             "type": "controllerref",
             "reference": {
                 "name": "items",
@@ -384,14 +353,12 @@
             },
             "codeClass": null,
             "userConfig": {
+                "designer|userClassName": "feedWindow",
                 "ref": "feedWindow",
-                "selector": "feedwindow",
-                "designer|userClassName": "feedWindow"
-            },
-            "customConfigs": []
+                "selector": "feedwindow"
+            }
         },
         {
-            "id": "ExtBox1-ext-gen28036",
             "type": "controlleraction",
             "reference": {
                 "name": "listeners",
@@ -399,6 +366,7 @@
             },
             "codeClass": null,
             "userConfig": {
+                "designer|userClassName": "onAddFeed",
                 "fn": "onAddFeed",
                 "implHandler": [
                     "var url = this.getFeedUrl().getValue();",
@@ -419,13 +387,10 @@
                 "name": "click",
                 "scope": "me",
                 "designer|targetType": "Ext.button.Button",
-                "designer|controlQuery": "feedwindow #add",
-                "designer|userClassName": "onAddFeed"
-            },
-            "customConfigs": []
+                "designer|controlQuery": "feedwindow #add"
+            }
         },
         {
-            "id": "ExtBox1-ext-gen28847",
             "type": "controllerref",
             "reference": {
                 "name": "items",
@@ -433,14 +398,12 @@
             },
             "codeClass": null,
             "userConfig": {
+                "designer|userClassName": "feedUrl",
                 "ref": "feedUrl",
-                "selector": "feedwindow #feed",
-                "designer|userClassName": "feedUrl"
-            },
-            "customConfigs": []
+                "selector": "feedwindow #feed"
+            }
         },
         {
-            "id": "ExtBox1-ext-gen29921",
             "type": "controllerref",
             "reference": {
                 "name": "items",
@@ -448,14 +411,12 @@
             },
             "codeClass": null,
             "userConfig": {
+                "designer|userClassName": "feedForm",
                 "ref": "feedForm",
-                "selector": "feedwindow #form",
-                "designer|userClassName": "feedForm"
-            },
-            "customConfigs": []
+                "selector": "feedwindow #form"
+            }
         },
         {
-            "id": "ExtBox1-ext-gen33730",
             "type": "controllerref",
             "reference": {
                 "name": "items",
@@ -463,14 +424,12 @@
             },
             "codeClass": null,
             "userConfig": {
+                "designer|userClassName": "feedPanelView",
                 "ref": "feedPanelView",
-                "selector": "feedpanel #dataview",
-                "designer|userClassName": "feedPanelView"
-            },
-            "customConfigs": []
+                "selector": "feedpanel #dataview"
+            }
         },
         {
-            "id": "ExtBox1-ext-gen34050",
             "type": "controlleraction",
             "reference": {
                 "name": "listeners",
@@ -478,6 +437,7 @@
             },
             "codeClass": null,
             "userConfig": {
+                "designer|userClassName": "onRemoveFeed",
                 "fn": "onRemoveFeed",
                 "implHandler": [
                     "var view = this.getFeedPanelView(),",
@@ -496,13 +456,10 @@
                 "name": "click",
                 "scope": "me",
                 "designer|targetType": "Ext.button.Button",
-                "designer|controlQuery": "feedpanel #remove",
-                "designer|userClassName": "onRemoveFeed"
-            },
-            "customConfigs": []
+                "designer|controlQuery": "feedpanel #remove"
+            }
         },
         {
-            "id": "ExtBox1-ext-gen35591",
             "type": "controlleraction",
             "reference": {
                 "name": "listeners",
@@ -510,6 +467,7 @@
             },
             "codeClass": null,
             "userConfig": {
+                "designer|userClassName": "onSummaryToggle",
                 "fn": "onSummaryToggle",
                 "implHandler": [
                     "button.up('feedgrid').down('#view').getPlugin('preview').toggleExpanded(pressed);"
@@ -517,13 +475,10 @@
                 "name": "toggle",
                 "scope": "me",
                 "designer|targetType": "Ext.button.Button",
-                "designer|controlQuery": "feedgrid #summary",
-                "designer|userClassName": "onSummaryToggle"
-            },
-            "customConfigs": []
+                "designer|controlQuery": "feedgrid #summary"
+            }
         },
         {
-            "id": "ExtBox1-ext-gen38411",
             "type": "controlleraction",
             "reference": {
                 "name": "listeners",
@@ -531,6 +486,7 @@
             },
             "codeClass": null,
             "userConfig": {
+                "designer|userClassName": "onReadingPaneChange",
                 "fn": "onReadingPaneChange",
                 "implHandler": [
                     "var east = cycle.up('feeddetail').down('#east'),",
@@ -557,13 +513,10 @@
                 "name": "change",
                 "scope": "me",
                 "designer|targetType": "Ext.button.Cycle",
-                "designer|controlQuery": "feedgrid #readingpane",
-                "designer|userClassName": "onReadingPaneChange"
-            },
-            "customConfigs": []
+                "designer|controlQuery": "feedgrid #readingpane"
+            }
         },
         {
-            "id": "ExtBox1-ext-gen41423",
             "type": "controlleraction",
             "reference": {
                 "name": "listeners",
@@ -571,6 +524,7 @@
             },
             "codeClass": null,
             "userConfig": {
+                "designer|userClassName": "onOpenAll",
                 "fn": "onOpenAll",
                 "implHandler": [
                     "this.onTabOpen(null, Ext.getStore('FeedItemStore').getRange());"
@@ -578,13 +532,10 @@
                 "name": "click",
                 "scope": "me",
                 "designer|targetType": "Ext.button.Button",
-                "designer|controlQuery": "feedgrid #openall",
-                "designer|userClassName": "onOpenAll"
-            },
-            "customConfigs": []
+                "designer|controlQuery": "feedgrid #openall"
+            }
         },
         {
-            "id": "ExtBox1-ext-gen44060",
             "type": "controlleraction",
             "reference": {
                 "name": "listeners",
@@ -592,6 +543,7 @@
             },
             "codeClass": null,
             "userConfig": {
+                "designer|userClassName": "onDataviewItemDblClick",
                 "fn": "onDataviewItemDblClick",
                 "implHandler": [
                     "this.onTabOpen(null, record);"
@@ -599,13 +551,10 @@
                 "name": "itemdblclick",
                 "scope": "me",
                 "designer|targetType": "Ext.grid.Panel",
-                "designer|controlQuery": "#feedgrid",
-                "designer|userClassName": "onDataviewItemDblClick"
-            },
-            "customConfigs": []
+                "designer|controlQuery": "#feedgrid"
+            }
         },
         {
-            "id": "ExtBox1-ext-gen50316",
             "type": "controllerref",
             "reference": {
                 "name": "items",
@@ -613,14 +562,12 @@
             },
             "codeClass": null,
             "userConfig": {
+                "designer|userClassName": "feedGridView",
                 "ref": "feedGridView",
-                "selector": "feedgrid #view",
-                "designer|userClassName": "feedGridView"
-            },
-            "customConfigs": []
+                "selector": "feedgrid #view"
+            }
         },
         {
-            "id": "ExtBox1-ext-gen49137",
             "type": "fixedfunction",
             "reference": {
                 "name": "items",
@@ -628,6 +575,7 @@
             },
             "codeClass": null,
             "userConfig": {
+                "designer|userClassName": "init",
                 "fn": "init",
                 "designer|params": [
                     "application"
@@ -636,14 +584,11 @@
                     "Ext.getStore('FeedItemStore').on('load', function() {",
                     "    this.getFeedGridView().getSelectionModel().select(0);",
                     "}, this);"
-                ],
-                "designer|userClassName": "init"
+                ]
             },
-            "customConfigs": [],
-            "iconCls": "icon-basic-function"
+            "iconCls": "icon-init-function"
         },
         {
-            "id": "ExtBox1-ext-gen52940",
             "type": "controlleraction",
             "reference": {
                 "name": "listeners",
@@ -651,6 +596,7 @@
             },
             "codeClass": null,
             "userConfig": {
+                "designer|userClassName": "onGotoPostClick",
                 "fn": "onGotoPostClick",
                 "implHandler": [
                     "var post = button.up('feedpost');",
@@ -660,13 +606,10 @@
                 "name": "click",
                 "scope": "me",
                 "designer|targetType": "Ext.button.Button",
-                "designer|controlQuery": "feedpost #gotopost",
-                "designer|userClassName": "onGotoPostClick"
-            },
-            "customConfigs": []
+                "designer|controlQuery": "feedpost #gotopost"
+            }
         },
         {
-            "id": "ExtBox1-ext-gen54290",
             "type": "controlleraction",
             "reference": {
                 "name": "listeners",
@@ -674,6 +617,7 @@
             },
             "codeClass": null,
             "userConfig": {
+                "designer|userClassName": "onViewInTabClick",
                 "fn": "onViewInTabClick",
                 "implHandler": [
                     "var post = button.up('feedpost');",
@@ -683,10 +627,8 @@
                 "name": "click",
                 "scope": "me",
                 "designer|targetType": "Ext.button.Button",
-                "designer|controlQuery": "feedpost #viewintab",
-                "designer|userClassName": "onViewInTabClick"
-            },
-            "customConfigs": []
+                "designer|controlQuery": "feedpost #viewintab"
+            }
         }
     ]
 }

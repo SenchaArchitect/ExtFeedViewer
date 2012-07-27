@@ -15,6 +15,7 @@
 
 Ext.define('MyApp.store.FeedStore', {
     extend: 'Ext.data.Store',
+
     requires: [
         'MyApp.model.Feed'
     ],

@@ -1,5 +1,4 @@
 {
-    "id": "ExtBox1-ext-gen6355",
     "type": "panel",
     "reference": {
         "name": "items",
@@ -7,21 +6,19 @@
     },
     "codeClass": null,
     "userConfig": {
+        "designer|userClassName": "FeedPost",
+        "designer|userAlias": "feedpost",
         "border": null,
         "cls": "preview",
         "height": null,
         "width": null,
         "autoScroll": true,
-        "title": null,
-        "designer|userClassName": "FeedPost",
-        "designer|userAlias": "feedpost"
+        "title": null
     },
-    "customConfigs": [],
+    "id": "ExtBox1-ext-gen6355",
     "designerId": "7067e8e9-8049-4d34-b6d9-8ed2bb34dd81",
-    "$viewOrder": 5,
     "cn": [
         {
-            "id": "ExtBox1-ext-gen51534",
             "type": "basicfunction",
             "reference": {
                 "name": "items",
@@ -29,6 +26,7 @@
             },
             "codeClass": null,
             "userConfig": {
+                "designer|userClassName": "createToolbar",
                 "fn": "createToolbar",
                 "implHandler": [
                     "var items = [],",
@@ -53,10 +51,8 @@
                     "config.items = items;",
                     "",
                     "return Ext.create('widget.toolbar', config);"
-                ],
-                "designer|userClassName": "createToolbar"
-            },
-            "customConfigs": []
+                ]
+            }
         }
     ]
 }

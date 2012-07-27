@@ -59,25 +59,30 @@ Ext.define('MyApp.controller.FeedController', {
         if (selections.length > 0) {
             this.loadFeed(selections[0]);
         }
+
     },
 
     onGridpanelSelectionChange: function(tablepanel, selections, options) {
         if (selections.length > 0) {
             this.loadPost(selections[0]);
         }
+
     },
 
     onDataviewViewReady: function(abstractview, options) {
         abstractview.getSelectionModel().select(abstractview.store.first());
+
     },
 
     onOpenAddFeedWindow: function(button, e, options) {
         var win = Ext.create('widget.feedwindow');
         win.show();
+
     },
 
     onFeedWindowCancel: function(button, e, options) {
         this.getFeedWindow().destroy();
+
     },
 
     onAddFeed: function(button, e, options) {
@@ -95,6 +100,7 @@ Ext.define('MyApp.controller.FeedController', {
             failure: this.markInvalid,
             scope: this
         });
+
     },
 
     onRemoveFeed: function(button, e, options) {
@@ -110,10 +116,12 @@ Ext.define('MyApp.controller.FeedController', {
         });
 
 
+
     },
 
     onSummaryToggle: function(button, pressed, options) {
         button.up('feedgrid').down('#view').getPlugin('preview').toggleExpanded(pressed);
+
     },
 
     onReadingPaneChange: function(cycle, item, options) {
@@ -137,26 +145,31 @@ Ext.define('MyApp.controller.FeedController', {
             east.hide();
             break;
         }
+
     },
 
     onOpenAll: function(button, e, options) {
         this.onTabOpen(null, Ext.getStore('FeedItemStore').getRange());
+
     },
 
     onDataviewItemDblClick: function(tablepanel, record, item, index, e, options) {
         this.onTabOpen(null, record);
+
     },
 
     onGotoPostClick: function(button, e, options) {
         var post = button.up('feedpost');
 
         window.open(post.active.get('link'));
+
     },
 
     onViewInTabClick: function(button, e, options) {
         var post = button.up('feedpost');
 
         this.onTabOpen(post, post.active);
+
     },
 
     loadFeed: function(feed) {
@@ -177,6 +190,7 @@ Ext.define('MyApp.controller.FeedController', {
         }
 
         feedInfo.setActiveTab(active);
+
     },
 
     loadPost: function(post) {
@@ -184,11 +198,13 @@ Ext.define('MyApp.controller.FeedController', {
 
         feedPost.active = post;
         feedPost.update(post.data);
+
     },
 
     markInvalid: function() {
         this.getFeedForm().setLoading(false);
         this.getFeedUrl().markInvalid('The URL specified is not a valid RSS2 feed.');
+
     },
 
     validateFeed: function(response) {
@@ -219,6 +235,7 @@ Ext.define('MyApp.controller.FeedController', {
         } catch(e) {
         }
         this.markInvalid();
+
     },
 
     animateNode: function(el, start, end, listeners) {
@@ -233,6 +250,7 @@ Ext.define('MyApp.controller.FeedController', {
             },
             listeners: listeners
         });
+
     },
 
     onTabOpen: function(post, rec) {
@@ -263,6 +281,7 @@ Ext.define('MyApp.controller.FeedController', {
             });
             feedInfo.setActiveTab(item);
         }
+
     },
 
     init: function(application) {
@@ -305,9 +324,11 @@ Ext.define('MyApp.controller.FeedController', {
                 click: this.onViewInTabClick
             }
         });
+
         Ext.getStore('FeedItemStore').on('load', function() {
             this.getFeedGridView().getSelectionModel().select(0);
         }, this);
+
     }
 
 });

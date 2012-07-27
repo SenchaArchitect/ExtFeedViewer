@@ -1,5 +1,4 @@
 {
-    "id": "ExtBox1-ext-gen7956",
     "type": "panel",
     "reference": {
         "name": "items",
@@ -7,19 +6,17 @@
     },
     "codeClass": null,
     "userConfig": {
+        "designer|userClassName": "FeedDetail",
+        "designer|userAlias": "feeddetail",
         "height": null,
         "width": null,
         "layout": "border",
-        "title": null,
-        "designer|userClassName": "FeedDetail",
-        "designer|userAlias": "feeddetail"
+        "title": null
     },
-    "customConfigs": [],
+    "id": "ExtBox1-ext-gen7956",
     "designerId": "19737a33-9c3a-4c90-b562-0ff17c79e914",
-    "$viewOrder": 3,
     "cn": [
         {
-            "id": "ExtBox1-ext-gen20026",
             "type": "basiceventbinding",
             "reference": {
                 "name": "listeners",
@@ -27,18 +24,16 @@
             },
             "codeClass": null,
             "userConfig": {
+                "designer|userClassName": "onPanelAdded",
                 "fn": "onPanelAdded",
                 "implHandler": [
                     "this.loadFeed(this.url);"
                 ],
                 "name": "added",
-                "scope": "me",
-                "designer|userClassName": "onPanelAdded"
-            },
-            "customConfigs": []
+                "scope": "me"
+            }
         },
         {
-            "id": "ExtBox1-ext-gen9950",
             "type": "basicfunction",
             "reference": {
                 "name": "items",
@@ -46,6 +41,7 @@
             },
             "codeClass": null,
             "userConfig": {
+                "designer|userClassName": "loadFeed",
                 "fn": "loadFeed",
                 "designer|params": [
                     "url"
@@ -54,13 +50,10 @@
                     "this.url = url;",
                     "",
                     "this.down('#feedgrid').loadFeed(url);"
-                ],
-                "designer|userClassName": "loadFeed"
-            },
-            "customConfigs": []
+                ]
+            }
         },
         {
-            "id": "ExtBox1-ext-gen13919",
             "type": "linkedinstance",
             "reference": {
                 "name": "items",
@@ -74,12 +67,10 @@
                 "layout|flex": 2,
                 "layout|region": "center"
             },
-            "customConfigs": [],
             "iconCls": "icon-linkedinstance",
             "masterInstanceId": "ExtBox1-ext-gen12978"
         },
         {
-            "id": "ExtBox1-ext-gen6900",
             "type": "container",
             "reference": {
                 "name": "items",
@@ -87,20 +78,18 @@
             },
             "codeClass": null,
             "userConfig": {
+                "layout|flex": 2,
+                "layout|region": "south",
+                "layout|split": true,
+                "designer|userClassName": "MyContainer",
                 "height": null,
                 "itemId": "south",
                 "maxHeight": null,
                 "minHeight": 150,
-                "layout": "fit",
-                "designer|userClassName": "MyContainer",
-                "layout|flex": 2,
-                "layout|region": "south",
-                "layout|split": true
+                "layout": "fit"
             },
-            "customConfigs": [],
             "cn": [
                 {
-                    "id": "ExtBox1-ext-gen6662",
                     "type": "linkedinstance",
                     "reference": {
                         "name": "items",
@@ -111,14 +100,12 @@
                         "id": null,
                         "itemId": "feedpost"
                     },
-                    "customConfigs": [],
                     "iconCls": "icon-linkedinstance",
                     "masterInstanceId": "ExtBox1-ext-gen6355"
                 }
             ]
         },
         {
-            "id": "ExtBox1-ext-gen36520",
             "type": "container",
             "reference": {
                 "name": "items",
@@ -126,17 +113,16 @@
             },
             "codeClass": null,
             "userConfig": {
+                "layout|flex": 1,
+                "layout|region": "east",
+                "layout|split": true,
+                "designer|userClassName": "MyContainer2",
                 "hidden": true,
                 "itemId": "east",
                 "minWidth": 150,
                 "width": null,
-                "layout": "fit",
-                "designer|userClassName": "MyContainer2",
-                "layout|flex": 1,
-                "layout|region": "east",
-                "layout|split": true
-            },
-            "customConfigs": []
+                "layout": "fit"
+            }
         }
     ]
 }

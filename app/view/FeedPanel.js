@@ -31,8 +31,8 @@ Ext.define('MyApp.view.FeedPanel', {
             dockedItems: [
                 {
                     xtype: 'toolbar',
-                    itemId: 'toolbar',
                     dock: 'top',
+                    itemId: 'toolbar',
                     items: [
                         {
                             xtype: 'button',
