@@ -52,7 +52,8 @@
                     "",
                     "return Ext.create('widget.toolbar', config);"
                 ]
-            }
+            },
+            "designerId": "f0209079-adba-4605-b360-b1acb670881a"
         }
     ]
 }

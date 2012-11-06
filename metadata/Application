@@ -32,7 +32,6 @@
     },
     "id": "ExtBox1-ext-gen2081",
     "designerId": "application",
-    "iconCls": "icon-application",
     "cn": [
         {
             "type": "fixedfunction",
@@ -50,7 +49,7 @@
                     "]);"
                 ]
             },
-            "iconCls": "icon-launch-function"
+            "designerId": "21f57fa4-a5a8-4f51-94f1-e988697d3ebb"
         },
         {
             "type": "loader",
@@ -62,9 +61,11 @@
             "userConfig": {
                 "designer|userClassName": "Loader",
                 "enabled": true,
-                "paths": "{\"Ext.ux\":\"ux/\"}"
+                "paths": [
+                    "{\"Ext.ux\":\"ux/\"}"
+                ]
             },
-            "iconCls": "icon-loader"
+            "designerId": "10e31052-bd3e-4fa1-9e22-9983d22d34f7"
         }
     ]
 }

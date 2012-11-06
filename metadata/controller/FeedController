@@ -34,7 +34,8 @@
                 "scope": "me",
                 "designer|targetType": "Ext.view.View",
                 "designer|controlQuery": "#feedpanel #dataview"
-            }
+            },
+            "designerId": "d5e8a91e-d0fc-4254-9fc7-163f7c0f9206"
         },
         {
             "type": "basicfunction",
@@ -68,7 +69,8 @@
                     "",
                     "feedInfo.setActiveTab(active);"
                 ]
-            }
+            },
+            "designerId": "b65bca2b-eeb0-4061-8188-88ff627a45c3"
         },
         {
             "type": "controlleraction",
@@ -89,7 +91,8 @@
                 "scope": "me",
                 "designer|targetType": "Ext.grid.Panel",
                 "designer|controlQuery": "#feedgrid"
-            }
+            },
+            "designerId": "e76bb53f-55ac-4d35-b5bc-f494c76e438d"
         },
         {
             "type": "basicfunction",
@@ -110,7 +113,8 @@
                     "feedPost.active = post;",
                     "feedPost.update(post.data);"
                 ]
-            }
+            },
+            "designerId": "d5862b3d-5239-481d-bb17-ff25cd85bcb6"
         },
         {
             "type": "basicfunction",
@@ -126,7 +130,8 @@
                     "this.getFeedForm().setLoading(false);",
                     "this.getFeedUrl().markInvalid('The URL specified is not a valid RSS2 feed.');"
                 ]
-            }
+            },
+            "designerId": "addf495e-b2fe-4338-815c-fe6bd4728e48"
         },
         {
             "type": "basicfunction",
@@ -170,7 +175,8 @@
                     "}",
                     "this.markInvalid();"
                 ]
-            }
+            },
+            "designerId": "b7ed7e97-d982-4961-9e82-74ddbea2863e"
         },
         {
             "type": "basicfunction",
@@ -201,7 +207,8 @@
                     "    listeners: listeners",
                     "});"
                 ]
-            }
+            },
+            "designerId": "3a2e351e-ef71-4d14-a709-901b13136f36"
         },
         {
             "type": "basicfunction",
@@ -246,7 +253,8 @@
                     "    feedInfo.setActiveTab(item);",
                     "}"
                 ]
-            }
+            },
+            "designerId": "1dd0f000-0e71-43a4-bfd7-fadd740265c8"
         },
         {
             "type": "controllerref",
@@ -259,7 +267,8 @@
                 "designer|userClassName": "feedPanel",
                 "ref": "feedPanel",
                 "selector": "feedpanel"
-            }
+            },
+            "designerId": "a2bc5d51-0fc4-4098-b2bf-e6a85cc86884"
         },
         {
             "type": "controllerref",
@@ -272,7 +281,8 @@
                 "designer|userClassName": "feedInfo",
                 "ref": "feedInfo",
                 "selector": "feedinfo"
-            }
+            },
+            "designerId": "cb9f7848-9de7-4e57-9351-86271ea2020b"
         },
         {
             "type": "controllerref",
@@ -285,7 +295,8 @@
                 "designer|userClassName": "feedPost",
                 "ref": "feedPost",
                 "selector": "#feedpost"
-            }
+            },
+            "designerId": "7b37292d-fa2a-4c75-bbb2-e7a7c1a4bace"
         },
         {
             "type": "controlleraction",
@@ -304,7 +315,8 @@
                 "scope": "me",
                 "designer|targetType": "Ext.view.View",
                 "designer|controlQuery": "#feedpanel dataview"
-            }
+            },
+            "designerId": "c631a453-0129-4946-8e31-3f63f6be982f"
         },
         {
             "type": "controlleraction",
@@ -324,7 +336,8 @@
                 "scope": "me",
                 "designer|targetType": "Ext.button.Button",
                 "designer|controlQuery": "#feedpanel #add"
-            }
+            },
+            "designerId": "ff45745e-6ad7-4774-baf9-69fee9f1469b"
         },
         {
             "type": "controlleraction",
@@ -343,7 +356,8 @@
                 "scope": "me",
                 "designer|targetType": "Ext.button.Button",
                 "designer|controlQuery": "feedwindow #cancel"
-            }
+            },
+            "designerId": "822a6b4e-a23d-4038-a8d2-20139bbab3f6"
         },
         {
             "type": "controllerref",
@@ -356,7 +370,8 @@
                 "designer|userClassName": "feedWindow",
                 "ref": "feedWindow",
                 "selector": "feedwindow"
-            }
+            },
+            "designerId": "167e79ac-7e18-4a84-9088-6f3939a17fd8"
         },
         {
             "type": "controlleraction",
@@ -388,7 +403,8 @@
                 "scope": "me",
                 "designer|targetType": "Ext.button.Button",
                 "designer|controlQuery": "feedwindow #add"
-            }
+            },
+            "designerId": "4be6ba69-aaf3-4437-b5ca-54a93128d8bf"
         },
         {
             "type": "controllerref",
@@ -401,7 +417,8 @@
                 "designer|userClassName": "feedUrl",
                 "ref": "feedUrl",
                 "selector": "feedwindow #feed"
-            }
+            },
+            "designerId": "7320a5a3-dceb-4924-a1a2-9d0651766756"
         },
         {
             "type": "controllerref",
@@ -414,7 +431,8 @@
                 "designer|userClassName": "feedForm",
                 "ref": "feedForm",
                 "selector": "feedwindow #form"
-            }
+            },
+            "designerId": "1f1bcc7c-dc7d-41a4-bbe4-c4fb45da9268"
         },
         {
             "type": "controllerref",
@@ -427,7 +445,8 @@
                 "designer|userClassName": "feedPanelView",
                 "ref": "feedPanelView",
                 "selector": "feedpanel #dataview"
-            }
+            },
+            "designerId": "5f2a9ff9-2b2c-46a2-b81e-bada9781814c"
         },
         {
             "type": "controlleraction",
@@ -457,7 +476,8 @@
                 "scope": "me",
                 "designer|targetType": "Ext.button.Button",
                 "designer|controlQuery": "feedpanel #remove"
-            }
+            },
+            "designerId": "87f27c6a-2b70-466a-b933-ca240c8fcdc0"
         },
         {
             "type": "controlleraction",
@@ -476,7 +496,8 @@
                 "scope": "me",
                 "designer|targetType": "Ext.button.Button",
                 "designer|controlQuery": "feedgrid #summary"
-            }
+            },
+            "designerId": "b1e0ed8a-3e09-4c21-83ee-8dca2c28544f"
         },
         {
             "type": "controlleraction",
@@ -514,7 +535,8 @@
                 "scope": "me",
                 "designer|targetType": "Ext.button.Cycle",
                 "designer|controlQuery": "feedgrid #readingpane"
-            }
+            },
+            "designerId": "d3b7e2b0-9d6e-432b-9181-63fbebb99f88"
         },
         {
             "type": "controlleraction",
@@ -533,7 +555,8 @@
                 "scope": "me",
                 "designer|targetType": "Ext.button.Button",
                 "designer|controlQuery": "feedgrid #openall"
-            }
+            },
+            "designerId": "46645135-b625-4bdd-a438-b2659a95df5f"
         },
         {
             "type": "controlleraction",
@@ -552,7 +575,8 @@
                 "scope": "me",
                 "designer|targetType": "Ext.grid.Panel",
                 "designer|controlQuery": "#feedgrid"
-            }
+            },
+            "designerId": "da73153e-20f4-484f-8213-9aa88fb5e1c6"
         },
         {
             "type": "controllerref",
@@ -565,7 +589,8 @@
                 "designer|userClassName": "feedGridView",
                 "ref": "feedGridView",
                 "selector": "feedgrid #view"
-            }
+            },
+            "designerId": "f4f9e175-c5a5-4ba8-930d-09abbecb6d85"
         },
         {
             "type": "fixedfunction",
@@ -586,7 +611,7 @@
                     "}, this);"
                 ]
             },
-            "iconCls": "icon-init-function"
+            "designerId": "09db13e9-61cb-4c6a-95dd-862082f6ec96"
         },
         {
             "type": "controlleraction",
@@ -607,7 +632,8 @@
                 "scope": "me",
                 "designer|targetType": "Ext.button.Button",
                 "designer|controlQuery": "feedpost #gotopost"
-            }
+            },
+            "designerId": "7c8318c9-3e9c-4da1-9903-15827bbc13c1"
         },
         {
             "type": "controlleraction",
@@ -628,7 +654,8 @@
                 "scope": "me",
                 "designer|targetType": "Ext.button.Button",
                 "designer|controlQuery": "feedpost #viewintab"
-            }
+            },
+            "designerId": "ad1a25d8-15f3-450b-8279-f354b8b374ef"
         }
     ]
 }

@@ -31,7 +31,8 @@
                 ],
                 "name": "added",
                 "scope": "me"
-            }
+            },
+            "designerId": "9338977a-df95-4b8b-a24b-2f5c5640cd3e"
         },
         {
             "type": "basicfunction",
@@ -51,7 +52,8 @@
                     "",
                     "this.down('#feedgrid').loadFeed(url);"
                 ]
-            }
+            },
+            "designerId": "92a47e74-6dfd-4215-aadc-de611289ad94"
         },
         {
             "type": "linkedinstance",
@@ -67,7 +69,7 @@
                 "layout|flex": 2,
                 "layout|region": "center"
             },
-            "iconCls": "icon-linkedinstance",
+            "designerId": "e6418b53-f559-4bbb-9b92-421652eef984",
             "masterInstanceId": "ExtBox1-ext-gen12978"
         },
         {
@@ -88,6 +90,7 @@
                 "minHeight": 150,
                 "layout": "fit"
             },
+            "designerId": "50f86382-f866-45c9-bf6e-08c5fbf39668",
             "cn": [
                 {
                     "type": "linkedinstance",
@@ -100,7 +103,7 @@
                         "id": null,
                         "itemId": "feedpost"
                     },
-                    "iconCls": "icon-linkedinstance",
+                    "designerId": "cfd74ec2-bdc3-4a20-9ae8-ae9c3487d565",
                     "masterInstanceId": "ExtBox1-ext-gen6355"
                 }
             ]
@@ -122,7 +125,8 @@
                 "minWidth": 150,
                 "width": null,
                 "layout": "fit"
-            }
+            },
+            "designerId": "8712e938-4873-4ba8-92d3-132ec5497f8d"
         }
     ]
 }

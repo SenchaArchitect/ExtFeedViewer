@@ -24,6 +24,7 @@
                 "designer|userClassName": "MyAjaxProxy",
                 "url": "feed-proxy.php"
             },
+            "designerId": "fe78dabb-3f72-47a4-8745-e7b001e42151",
             "cn": [
                 {
                     "type": "xmlreader",
@@ -35,7 +36,8 @@
                     "userConfig": {
                         "designer|userClassName": "MyXmlReader",
                         "record": "item"
-                    }
+                    },
+                    "designerId": "2a7a0020-8ddd-4cdf-ae93-ff1cdaacc003"
                 }
             ]
         },
@@ -50,7 +52,8 @@
                 "designer|userClassName": "MySorter",
                 "direction": "DESC",
                 "property": "pubDate"
-            }
+            },
+            "designerId": "5cc23a50-1403-45d0-a066-94f2bdd62c7a"
         }
     ]
 }

@@ -30,6 +30,7 @@
                 "cls": "x-docked-noborder-top",
                 "width": null
             },
+            "designerId": "64b1354a-7b38-4905-883f-032c38125781",
             "cn": [
                 {
                     "type": "button",
@@ -44,7 +45,8 @@
                         "itemId": "openall",
                         "iconCls": "open-all",
                         "text": "Open All"
-                    }
+                    },
+                    "designerId": "104b5a32-0bbd-4ce6-8fdc-bbf3060ef835"
                 },
                 {
                     "type": "tbseparator",
@@ -56,7 +58,8 @@
                     "userConfig": {
                         "layout|flex": null,
                         "designer|userClassName": "MySeparator"
-                    }
+                    },
+                    "designerId": "bb53f2bd-b168-48d0-b968-dbb7124fa606"
                 },
                 {
                     "type": "cyclebutton",
@@ -73,6 +76,7 @@
                         "prependText": "Preview: ",
                         "showText": true
                     },
+                    "designerId": "6c2a1e27-851a-4303-b655-8ea395e70532",
                     "cn": [
                         {
                             "type": "menu",
@@ -86,6 +90,7 @@
                                 "id": "reading-menu",
                                 "width": null
                             },
+                            "designerId": "436a335e-5227-4864-801f-d768d567bf19",
                             "cn": [
                                 {
                                     "type": "menucheckitem",
@@ -101,7 +106,8 @@
                                         "text": "Bottom",
                                         "checked": null,
                                         "checkedCls": null
-                                    }
+                                    },
+                                    "designerId": "c2240361-b160-45a0-83a4-0545cf0e9747"
                                 },
                                 {
                                     "type": "menucheckitem",
@@ -114,7 +120,8 @@
                                         "designer|userClassName": "MyCheckItem1",
                                         "iconCls": "preview-right",
                                         "text": "Right"
-                                    }
+                                    },
+                                    "designerId": "9f5bacfe-d755-43bb-91f1-aa8ba2bd85bb"
                                 },
                                 {
                                     "type": "menucheckitem",
@@ -127,7 +134,8 @@
                                         "designer|userClassName": "MyCheckItem2",
                                         "iconCls": "preview-hide",
                                         "text": "Hide"
-                                    }
+                                    },
+                                    "designerId": "7bc90b6e-ffac-407c-a8d9-565e171c0f4f"
                                 }
                             ]
                         }
@@ -149,7 +157,8 @@
                         "iconCls": "summary",
                         "pressed": true,
                         "text": "Summary"
-                    }
+                    },
+                    "designerId": "6128d902-54e3-4d55-95a3-f5ae19e992a8"
                 }
             ]
         },
@@ -166,6 +175,7 @@
                 "flex": 1,
                 "text": "Title"
             },
+            "designerId": "36228ad8-f297-4a26-aaa5-9988ea40c01e",
             "cn": [
                 {
                     "type": "fixedfunction",
@@ -190,7 +200,7 @@
                             "return Ext.String.format('<div class=\"topic\"><b>{0}</b><span class=\"author\">{1}</span></div>', value, record.get('author') || \"Unknown\");"
                         ]
                     },
-                    "iconCls": "icon-basic-function"
+                    "designerId": "e03ee52b-8fe6-4834-86d0-6389ef6b7e40"
                 }
             ]
         },
@@ -207,7 +217,8 @@
                 "width": 200,
                 "dataIndex": "author",
                 "text": "Author"
-            }
+            },
+            "designerId": "d92f0abc-bbeb-47be-86c2-b3559f9d1b86"
         },
         {
             "type": "gridcolumn",
@@ -222,6 +233,7 @@
                 "dataIndex": "pubDate",
                 "text": "Date"
             },
+            "designerId": "dd72376b-1d27-4d90-8b64-82f9a391bb20",
             "cn": [
                 {
                     "type": "fixedfunction",
@@ -261,7 +273,7 @@
                             "return Ext.Date.format(value, 'Y/m/d g:i a');"
                         ]
                     },
-                    "iconCls": "icon-basic-function"
+                    "designerId": "91197f7a-b140-4c95-a1c3-42f169f48bd5"
                 }
             ]
         },
@@ -275,7 +287,8 @@
             "userConfig": {
                 "designer|userClassName": "MyGridView",
                 "itemId": "view"
-            }
+            },
+            "designerId": "608a4349-68c4-4321-b7c6-0c147977acce"
         },
         {
             "type": "basicfunction",
@@ -295,7 +308,8 @@
                     "store.getProxy().extraParams.feed = url;",
                     "store.load();"
                 ]
-            }
+            },
+            "designerId": "714b5ce3-2c25-45cb-b8be-7471c4f9b78b"
         }
     ]
 }

@@ -21,7 +21,8 @@
             "userConfig": {
                 "designer|userClassName": "MyField2",
                 "name": "title"
-            }
+            },
+            "designerId": "cb1ab8cc-4da6-4208-8ceb-94e1b1f5fcac"
         },
         {
             "type": "datafield",
@@ -33,7 +34,8 @@
             "userConfig": {
                 "designer|userClassName": "MyField3",
                 "name": "author"
-            }
+            },
+            "designerId": "fa392101-3acc-4a71-8a22-fe741516beb1"
         },
         {
             "type": "datafield",
@@ -46,7 +48,8 @@
                 "designer|userClassName": "MyField4",
                 "name": "pubDate",
                 "type": "date"
-            }
+            },
+            "designerId": "970340b6-ed83-485d-a2f8-238826a8623f"
         },
         {
             "type": "datafield",
@@ -58,7 +61,8 @@
             "userConfig": {
                 "designer|userClassName": "MyField5",
                 "name": "link"
-            }
+            },
+            "designerId": "20a6cb50-6976-45b8-9982-85fd7bcbab18"
         },
         {
             "type": "datafield",
@@ -70,7 +74,8 @@
             "userConfig": {
                 "designer|userClassName": "MyField6",
                 "name": "description"
-            }
+            },
+            "designerId": "666afacd-a2c3-4d65-82ff-8998a8a61506"
         },
         {
             "type": "datafield",
@@ -82,7 +87,8 @@
             "userConfig": {
                 "designer|userClassName": "MyField7",
                 "name": "content"
-            }
+            },
+            "designerId": "8a6ac0d3-2652-403d-8310-0ffdb585e0f6"
         }
     ]
 }

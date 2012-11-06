@@ -29,6 +29,7 @@
                 "id": null,
                 "itemId": "toolbar"
             },
+            "designerId": "72e3619b-3a3f-445d-81c1-746b9c2deb80",
             "cn": [
                 {
                     "type": "button",
@@ -44,7 +45,8 @@
                         "itemId": "add",
                         "iconCls": "feed-add",
                         "text": "Add Feed"
-                    }
+                    },
+                    "designerId": "0a03427d-e82f-45aa-98ea-f8d721fab2fc"
                 },
                 {
                     "type": "button",
@@ -60,7 +62,8 @@
                         "itemId": "remove",
                         "iconCls": "feed-remove",
                         "text": "Remove Feed"
-                    }
+                    },
+                    "designerId": "912fd379-352a-4998-a77a-0acb282641dd"
                 }
             ]
         },
@@ -82,6 +85,7 @@
                 "store": "FeedStore",
                 "trackOver": true
             },
+            "designerId": "0ec3a6d3-4091-4c96-9d30-2e2a8c8342ec",
             "cn": [
                 {
                     "type": "template",
@@ -96,7 +100,8 @@
                             "<tpl for=\".\"><div class=\"feed-list-item\">{title}</div></tpl>"
                         ],
                         "designer|displayName": "tpl"
-                    }
+                    },
+                    "designerId": "771c424e-bb1c-42d6-8602-3d7177d000d1"
                 }
             ]
         }
