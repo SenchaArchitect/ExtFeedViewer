@@ -25,7 +25,8 @@
             "userConfig": {
                 "designer|userClassName": "MyField10",
                 "name": "url"
-            }
+            },
+            "designerId": "84986062-e4a0-468b-abd2-1d8a908944bf"
         },
         {
             "type": "datafield",
@@ -37,7 +38,8 @@
             "userConfig": {
                 "designer|userClassName": "MyField11",
                 "name": "title"
-            }
+            },
+            "designerId": "e35755bd-c795-45a6-8025-106a85df3af7"
         }
     ]
 }
