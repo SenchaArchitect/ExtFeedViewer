@@ -30,6 +30,7 @@
                 "bodyPadding": "12 10 10",
                 "title": null
             },
+            "designerId": "7c0d0332-720e-4db8-a5ae-19fc1d7eaa63",
             "cn": [
                 {
                     "type": "combobox",
@@ -50,7 +51,8 @@
                         "queryMode": "local",
                         "store": "DefaultFeedsStore",
                         "valueField": "url"
-                    }
+                    },
+                    "designerId": "19027195-f963-45aa-bf54-08ccde5d5223"
                 }
             ]
         },
@@ -73,6 +75,7 @@
                 "padding": null,
                 "layout": "hbox"
             },
+            "designerId": "86ce0413-f8e4-4280-bd8a-bbeb685afc20",
             "cn": [
                 {
                     "type": "button",
@@ -86,7 +89,8 @@
                         "itemId": "add",
                         "width": 80,
                         "text": "Add Feed"
-                    }
+                    },
+                    "designerId": "e2e435f9-10af-4d3f-b6a4-c689b59ad79e"
                 },
                 {
                     "type": "button",
@@ -101,7 +105,8 @@
                         "margin": "0 0 0 4",
                         "width": 80,
                         "text": "Cancel"
-                    }
+                    },
+                    "designerId": "f4058543-ed55-497c-9b66-d04bec61680d"
                 }
             ]
         }
