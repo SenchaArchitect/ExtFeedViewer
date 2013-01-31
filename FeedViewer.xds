@@ -13,12 +13,13 @@
         "senchaIoPath": "http://extjs.cachefly.net/designer/IO/",
         "instantiateStore": true,
         "saveOnDeploy": false,
-        "appName": "MyApp"
+        "appName": "MyApp",
+        "buildShouldOverwriteIndex": true
     },
-    "xdsVersion": "2.1.0",
-    "xdsBuild": 670,
+    "xdsVersion": "2.2.0",
+    "xdsBuild": 840,
     "schemaVersion": 1,
-    "upgradeVersion": 210000000498,
+    "upgradeVersion": 210000000499,
     "framework": "ext40",
     "topInstanceFileMap": {
         "29c25f5d-cff4-4199-951d-e3a1dfddcc12": {

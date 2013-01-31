@@ -1,5 +1,5 @@
 {
-    "type": "application",
+    "type": "Ext.app.Application",
     "reference": {
         "name": "items",
         "type": "array"
@@ -30,7 +30,6 @@
             "FeedController"
         ]
     },
-    "id": "ExtBox1-ext-gen2081",
     "designerId": "application",
     "cn": [
         {
@@ -52,18 +51,18 @@
             "designerId": "21f57fa4-a5a8-4f51-94f1-e988697d3ebb"
         },
         {
-            "type": "loader",
+            "type": "Ext.Loader",
             "reference": {
                 "name": "loader",
                 "type": "object"
             },
             "codeClass": null,
             "userConfig": {
-                "designer|userClassName": "Loader",
                 "enabled": true,
                 "paths": [
                     "{\"Ext.ux\":\"ux/\"}"
-                ]
+                ],
+                "designer|userClassName": "Loader"
             },
             "designerId": "10e31052-bd3e-4fa1-9e22-9983d22d34f7"
         }

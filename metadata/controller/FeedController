@@ -1,5 +1,5 @@
 {
-    "type": "controller",
+    "type": "Ext.app.Controller",
     "reference": {
         "name": "items",
         "type": "array"
@@ -8,7 +8,6 @@
     "userConfig": {
         "designer|userClassName": "FeedController"
     },
-    "id": "ExtBox1-ext-gen7422",
     "designerId": "68141c8e-578f-4b49-b1c0-e140070964e7",
     "cn": [
         {
@@ -83,8 +82,8 @@
                 "designer|userClassName": "onGridpanelSelectionChange",
                 "fn": "onGridpanelSelectionChange",
                 "implHandler": [
-                    "if (selections.length > 0) {",
-                    "    this.loadPost(selections[0]);",
+                    "if (selected.length > 0) {",
+                    "    this.loadPost(selected[0]);",
                     "}"
                 ],
                 "name": "selectionchange",
@@ -309,7 +308,7 @@
                 "designer|userClassName": "onDataviewViewReady",
                 "fn": "onDataviewViewReady",
                 "implHandler": [
-                    "abstractview.getSelectionModel().select(abstractview.store.first());"
+                    "dataview.getSelectionModel().select(dataview.store.first());"
                 ],
                 "name": "viewready",
                 "scope": "me",

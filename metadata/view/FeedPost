@@ -1,21 +1,20 @@
 {
-    "type": "panel",
+    "type": "Ext.panel.Panel",
     "reference": {
         "name": "items",
         "type": "array"
     },
     "codeClass": null,
     "userConfig": {
-        "designer|userClassName": "FeedPost",
-        "designer|userAlias": "feedpost",
         "border": null,
         "cls": "preview",
         "height": null,
         "width": null,
+        "designer|userClassName": "FeedPost",
+        "designer|userAlias": "feedpost",
         "autoScroll": true,
         "title": null
     },
-    "id": "ExtBox1-ext-gen6355",
     "designerId": "7067e8e9-8049-4d34-b6d9-8ed2bb34dd81",
     "cn": [
         {
@@ -54,6 +53,49 @@
                 ]
             },
             "designerId": "f0209079-adba-4605-b360-b1acb670881a"
+        },
+        {
+            "type": "processcfgfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "processFeedPost",
+                "fn": "processFeedPost",
+                "designer|params": [
+                    "config"
+                ],
+                "implHandler": [
+                    "config.dockedItems = [this.createToolbar()];",
+                    "config.tpl = Ext.create('Ext.XTemplate',",
+                    "\t'<div class=\"post-data\">',",
+                    "\t'<span class=\"post-date\">{pubDate:this.formatDate}</span>',",
+                    "\t'<h3 class=\"post-title\">{title}</h3>',",
+                    "\t'<h4 class=\"post-author\">by {author:this.defaultValue}</h4>',",
+                    "\t'</div>',",
+                    "\t'<div class=\"post-body\">{content:this.getBody}</div>',",
+                    "\t{",
+                    "        getBody: function(value, all){",
+                    "            return Ext.util.Format.stripScripts(value);",
+                    "        },",
+                    "        ",
+                    "        defaultValue: function(v){",
+                    "            return v ? v : 'Unknown';",
+                    "        },",
+                    "        ",
+                    "        formatDate: function(value){",
+                    "            if (!value) {",
+                    "                return '';",
+                    "            }",
+                    "            return Ext.Date.format(value, 'M j, Y, g:i a');",
+                    "        }",
+                    "    }",
+                    ");"
+                ]
+            },
+            "designerId": "cc0abe52-e433-4414-b7ce-50cf87df6754"
         }
     ]
 }
