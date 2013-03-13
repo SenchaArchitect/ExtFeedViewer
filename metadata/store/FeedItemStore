@@ -1,20 +1,19 @@
 {
-    "type": "store",
+    "type": "Ext.data.Store",
     "reference": {
         "name": "items",
         "type": "array"
     },
     "codeClass": null,
     "userConfig": {
-        "designer|userClassName": "FeedItemStore",
+        "model": "FeedItem",
         "storeId": "FeedItemStore",
-        "model": "FeedItem"
+        "designer|userClassName": "FeedItemStore"
     },
-    "id": "ExtBox1-ext-gen17619",
     "designerId": "91af3be2-a1de-4a58-9dd1-c19bccd5fef7",
     "cn": [
         {
-            "type": "ajaxproxy",
+            "type": "Ext.data.proxy.Ajax",
             "reference": {
                 "name": "proxy",
                 "type": "object"
@@ -27,7 +26,7 @@
             "designerId": "fe78dabb-3f72-47a4-8745-e7b001e42151",
             "cn": [
                 {
-                    "type": "xmlreader",
+                    "type": "Ext.data.reader.Xml",
                     "reference": {
                         "name": "reader",
                         "type": "object"
@@ -42,16 +41,16 @@
             ]
         },
         {
-            "type": "sorter",
+            "type": "Ext.util.Sorter",
             "reference": {
                 "name": "sorters",
                 "type": "object"
             },
             "codeClass": null,
             "userConfig": {
-                "designer|userClassName": "MySorter",
                 "direction": "DESC",
-                "property": "pubDate"
+                "property": "pubDate",
+                "designer|userClassName": "MySorter"
             },
             "designerId": "5cc23a50-1403-45d0-a066-94f2bdd62c7a"
         }

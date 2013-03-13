@@ -1,19 +1,18 @@
 {
-    "type": "panel",
+    "type": "Ext.panel.Panel",
     "reference": {
         "name": "items",
         "type": "array"
     },
     "codeClass": null,
     "userConfig": {
-        "designer|userClassName": "FeedDetail",
-        "designer|userAlias": "feeddetail",
         "height": null,
         "width": null,
+        "designer|userClassName": "FeedDetail",
+        "designer|userAlias": "feeddetail",
         "layout": "border",
         "title": null
     },
-    "id": "ExtBox1-ext-gen7956",
     "designerId": "19737a33-9c3a-4c90-b562-0ff17c79e914",
     "cn": [
         {
@@ -70,10 +69,10 @@
                 "layout|region": "center"
             },
             "designerId": "e6418b53-f559-4bbb-9b92-421652eef984",
-            "masterInstanceId": "ExtBox1-ext-gen12978"
+            "masterInstanceId": "3f0846b9-bddf-471e-a17b-95cb5de14e54"
         },
         {
-            "type": "container",
+            "type": "Ext.container.Container",
             "reference": {
                 "name": "items",
                 "type": "array"
@@ -83,11 +82,11 @@
                 "layout|flex": 2,
                 "layout|region": "south",
                 "layout|split": true,
-                "designer|userClassName": "MyContainer",
                 "height": null,
                 "itemId": "south",
                 "maxHeight": null,
                 "minHeight": 150,
+                "designer|userClassName": "MyContainer",
                 "layout": "fit"
             },
             "designerId": "50f86382-f866-45c9-bf6e-08c5fbf39668",
@@ -104,12 +103,12 @@
                         "itemId": "feedpost"
                     },
                     "designerId": "cfd74ec2-bdc3-4a20-9ae8-ae9c3487d565",
-                    "masterInstanceId": "ExtBox1-ext-gen6355"
+                    "masterInstanceId": "7067e8e9-8049-4d34-b6d9-8ed2bb34dd81"
                 }
             ]
         },
         {
-            "type": "container",
+            "type": "Ext.container.Container",
             "reference": {
                 "name": "items",
                 "type": "array"
@@ -119,11 +118,11 @@
                 "layout|flex": 1,
                 "layout|region": "east",
                 "layout|split": true,
-                "designer|userClassName": "MyContainer2",
                 "hidden": true,
                 "itemId": "east",
                 "minWidth": 150,
                 "width": null,
+                "designer|userClassName": "MyContainer2",
                 "layout": "fit"
             },
             "designerId": "8712e938-4873-4ba8-92d3-132ec5497f8d"

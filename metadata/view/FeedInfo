@@ -1,17 +1,16 @@
 {
-    "type": "tabpanel",
+    "type": "Ext.tab.Panel",
     "reference": {
         "name": "items",
         "type": "array"
     },
     "codeClass": null,
     "userConfig": {
-        "designer|userClassName": "FeedInfo",
-        "designer|userAlias": "feedinfo",
         "height": null,
         "width": null,
+        "designer|userClassName": "FeedInfo",
+        "designer|userAlias": "feedinfo",
         "activeTab": 0
     },
-    "id": "ExtBox1-ext-gen5054",
     "designerId": "b083da5f-2aca-42d4-b9b5-016a581ea465"
 }
