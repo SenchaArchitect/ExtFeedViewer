@@ -1,18 +1,17 @@
 {
-    "type": "viewport",
+    "type": "Ext.container.Viewport",
     "reference": {
         "name": "items",
         "type": "array"
     },
     "codeClass": null,
     "userConfig": {
+        "padding": 5,
         "designer|userClassName": "MyViewport",
         "designer|initialView": true,
-        "padding": 5,
         "defaults": null,
         "layout": "border"
     },
-    "id": "ExtBox1-ext-gen3069",
     "designerId": "29c25f5d-cff4-4199-951d-e3a1dfddcc12",
     "cn": [
         {
@@ -29,7 +28,7 @@
                 "layout|region": "west"
             },
             "designerId": "bc2a50e6-3c8e-4a92-bbc2-52d6469101b8",
-            "masterInstanceId": "ExtBox1-ext-gen3230"
+            "masterInstanceId": "c84fb3e7-80ad-4f16-b5ff-73aed7162ce4"
         },
         {
             "type": "linkedinstance",
@@ -44,7 +43,7 @@
                 "layout|region": "center"
             },
             "designerId": "d58f7580-326c-4d49-89e8-bf995370ac74",
-            "masterInstanceId": "ExtBox1-ext-gen5054"
+            "masterInstanceId": "b083da5f-2aca-42d4-b9b5-016a581ea465"
         }
     ]
 }

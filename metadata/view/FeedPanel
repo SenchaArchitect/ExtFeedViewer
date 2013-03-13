@@ -1,5 +1,5 @@
 {
-    "type": "panel",
+    "type": "Ext.panel.Panel",
     "reference": {
         "name": "items",
         "type": "array"
@@ -10,14 +10,12 @@
         "designer|userAlias": "feedpanel",
         "layout": "fit",
         "collapseDirection": "left",
-        "collapsible": false,
         "title": "Feeds"
     },
-    "id": "ExtBox1-ext-gen3230",
     "designerId": "c84fb3e7-80ad-4f16-b5ff-73aed7162ce4",
     "cn": [
         {
-            "type": "toolbar",
+            "type": "Ext.toolbar.Toolbar",
             "reference": {
                 "name": "dockedItems",
                 "type": "array"
@@ -25,14 +23,14 @@
             "codeClass": null,
             "userConfig": {
                 "dock": "top",
-                "designer|userClassName": "MyToolbar",
                 "id": null,
-                "itemId": "toolbar"
+                "itemId": "toolbar",
+                "designer|userClassName": "MyToolbar"
             },
             "designerId": "72e3619b-3a3f-445d-81c1-746b9c2deb80",
             "cn": [
                 {
-                    "type": "button",
+                    "type": "Ext.button.Button",
                     "reference": {
                         "name": "items",
                         "type": "array"
@@ -40,16 +38,16 @@
                     "codeClass": null,
                     "userConfig": {
                         "layout|flex": null,
-                        "designer|userClassName": "MyButton",
                         "id": null,
                         "itemId": "add",
+                        "designer|userClassName": "MyButton",
                         "iconCls": "feed-add",
                         "text": "Add Feed"
                     },
                     "designerId": "0a03427d-e82f-45aa-98ea-f8d721fab2fc"
                 },
                 {
-                    "type": "button",
+                    "type": "Ext.button.Button",
                     "reference": {
                         "name": "items",
                         "type": "array"
@@ -57,9 +55,8 @@
                     "codeClass": null,
                     "userConfig": {
                         "layout|flex": null,
-                        "designer|userClassName": "MyButton1",
-                        "disabled": true,
                         "itemId": "remove",
+                        "designer|userClassName": "MyButton1",
                         "iconCls": "feed-remove",
                         "text": "Remove Feed"
                     },
@@ -68,17 +65,17 @@
             ]
         },
         {
-            "type": "dataview",
+            "type": "Ext.view.View",
             "reference": {
                 "name": "items",
                 "type": "array"
             },
             "codeClass": null,
             "userConfig": {
-                "designer|userClassName": "MyView",
                 "cls": "feed-list",
                 "id": null,
                 "itemId": "dataview",
+                "designer|userClassName": "MyView",
                 "itemSelector": ".feed-list-item",
                 "overItemCls": "feed-list-item-hover",
                 "singleSelect": true,
@@ -88,7 +85,7 @@
             "designerId": "0ec3a6d3-4091-4c96-9d30-2e2a8c8342ec",
             "cn": [
                 {
-                    "type": "template",
+                    "type": "Ext.XTemplate",
                     "reference": {
                         "name": "tpl",
                         "type": "object"

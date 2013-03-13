@@ -1,16 +1,15 @@
 {
-    "type": "store",
+    "type": "Ext.data.Store",
     "reference": {
         "name": "items",
         "type": "array"
     },
     "codeClass": null,
     "userConfig": {
-        "designer|userClassName": "FeedStore",
-        "storeId": "MyStore",
         "model": "Feed",
+        "storeId": "MyStore",
+        "designer|userClassName": "FeedStore",
         "data": "[{\n                title: 'Sencha Blog',\n                url: 'http://feeds.feedburner.com/extblog'\n            }, {\n                title: 'Sencha Forums',\n                url: 'http://sencha.com/forum/external.php?type=RSS2'\n            }, {\n                title: 'Ajaxian',\n                url: 'http://feeds.feedburner.com/ajaxian'\n            }]"
     },
-    "id": "ExtBox1-ext-gen6064",
     "designerId": "f3e12d72-b301-4ba2-9484-afed23aa6830"
 }
