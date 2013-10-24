@@ -6,10 +6,21 @@
     },
     "codeClass": null,
     "userConfig": {
-        "model": "Feed",
-        "storeId": "MyStore",
+        "data": [
+            "[{",
+            "                title: 'Sencha Blog',",
+            "                url: 'http://feeds.feedburner.com/extblog'",
+            "            }, {",
+            "                title: 'Sencha Forums',",
+            "                url: 'http://sencha.com/forum/external.php?type=RSS2'",
+            "            }, {",
+            "                title: 'Ajaxian',",
+            "                url: 'http://feeds.feedburner.com/ajaxian'",
+            "            }]"
+        ],
         "designer|userClassName": "FeedStore",
-        "data": "[{\n                title: 'Sencha Blog',\n                url: 'http://feeds.feedburner.com/extblog'\n            }, {\n                title: 'Sencha Forums',\n                url: 'http://sencha.com/forum/external.php?type=RSS2'\n            }, {\n                title: 'Ajaxian',\n                url: 'http://feeds.feedburner.com/ajaxian'\n            }]"
+        "model": "Feed",
+        "storeId": "MyStore"
     },
     "designerId": "f3e12d72-b301-4ba2-9484-afed23aa6830"
 }

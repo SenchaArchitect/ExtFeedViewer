@@ -6,10 +6,10 @@
     },
     "codeClass": null,
     "userConfig": {
-        "designer|userClassName": "FeedPanel",
-        "designer|userAlias": "feedpanel",
-        "layout": "fit",
         "collapseDirection": "left",
+        "designer|userAlias": "feedpanel",
+        "designer|userClassName": "FeedPanel",
+        "layout": "fit",
         "title": "Feeds"
     },
     "designerId": "c84fb3e7-80ad-4f16-b5ff-73aed7162ce4",
@@ -24,8 +24,7 @@
             "userConfig": {
                 "dock": "top",
                 "id": null,
-                "itemId": "toolbar",
-                "designer|userClassName": "MyToolbar"
+                "itemId": "toolbar"
             },
             "designerId": "72e3619b-3a3f-445d-81c1-746b9c2deb80",
             "cn": [
@@ -37,11 +36,10 @@
                     },
                     "codeClass": null,
                     "userConfig": {
-                        "layout|flex": null,
+                        "iconCls": "feed-add",
                         "id": null,
                         "itemId": "add",
-                        "designer|userClassName": "MyButton",
-                        "iconCls": "feed-add",
+                        "layout|flex": null,
                         "text": "Add Feed"
                     },
                     "designerId": "0a03427d-e82f-45aa-98ea-f8d721fab2fc"
@@ -54,10 +52,9 @@
                     },
                     "codeClass": null,
                     "userConfig": {
-                        "layout|flex": null,
-                        "itemId": "remove",
-                        "designer|userClassName": "MyButton1",
                         "iconCls": "feed-remove",
+                        "itemId": "remove",
+                        "layout|flex": null,
                         "text": "Remove Feed"
                     },
                     "designerId": "912fd379-352a-4998-a77a-0acb282641dd"
@@ -75,10 +72,8 @@
                 "cls": "feed-list",
                 "id": null,
                 "itemId": "dataview",
-                "designer|userClassName": "MyView",
                 "itemSelector": ".feed-list-item",
                 "overItemCls": "feed-list-item-hover",
-                "singleSelect": true,
                 "store": "FeedStore",
                 "trackOver": true
             },
@@ -92,11 +87,10 @@
                     },
                     "codeClass": null,
                     "userConfig": {
-                        "designer|userClassName": "tpl",
+                        "designer|displayName": "tpl",
                         "implHandler": [
                             "<tpl for=\".\"><div class=\"feed-list-item\">{title}</div></tpl>"
-                        ],
-                        "designer|displayName": "tpl"
+                        ]
                     },
                     "designerId": "771c424e-bb1c-42d6-8602-3d7177d000d1"
                 }

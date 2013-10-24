@@ -6,6 +6,7 @@
     },
     "codeClass": null,
     "userConfig": {
+        "designer|userClassName": "css",
         "url": "Feed-Viewer.css"
     },
     "designerId": "6634f12a-0d03-419c-8b02-59d383cb88eb"

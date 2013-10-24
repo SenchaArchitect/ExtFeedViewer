@@ -6,10 +6,15 @@
     },
     "codeClass": null,
     "userConfig": {
+        "autoCreateViewport": true,
+        "controllers": [
+            "FeedController"
+        ],
         "models": [
             "Feed",
             "FeedItem"
         ],
+        "name": "MyApp",
         "stores": [
             "FeedStore",
             "FeedItemStore",
@@ -23,11 +28,6 @@
             "FeedPost",
             "FeedInfo",
             "FeedWindow"
-        ],
-        "autoCreateViewport": true,
-        "name": "MyApp",
-        "controllers": [
-            "FeedController"
         ]
     },
     "designerId": "application",
@@ -40,7 +40,6 @@
             },
             "codeClass": null,
             "userConfig": {
-                "designer|userClassName": "launch",
                 "fn": "launch",
                 "implHandler": [
                     "Ext.syncRequire([",
@@ -61,8 +60,7 @@
                 "enabled": true,
                 "paths": [
                     "{\"Ext.ux\":\"ux/\"}"
-                ],
-                "designer|userClassName": "Loader"
+                ]
             },
             "designerId": "10e31052-bd3e-4fa1-9e22-9983d22d34f7"
         }

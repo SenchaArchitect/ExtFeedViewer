@@ -6,12 +6,12 @@
     },
     "codeClass": null,
     "userConfig": {
-        "height": null,
-        "width": null,
-        "designer|userClassName": "FeedDetail",
         "designer|userAlias": "feeddetail",
+        "designer|userClassName": "FeedDetail",
+        "height": null,
         "layout": "border",
-        "title": null
+        "title": null,
+        "width": null
     },
     "designerId": "19737a33-9c3a-4c90-b562-0ff17c79e914",
     "cn": [
@@ -23,7 +23,6 @@
             },
             "codeClass": null,
             "userConfig": {
-                "designer|userClassName": "onPanelAdded",
                 "fn": "onPanelAdded",
                 "implHandler": [
                     "this.loadFeed(this.url);"
@@ -41,11 +40,10 @@
             },
             "codeClass": null,
             "userConfig": {
-                "designer|userClassName": "loadFeed",
-                "fn": "loadFeed",
                 "designer|params": [
                     "url"
                 ],
+                "fn": "loadFeed",
                 "implHandler": [
                     "this.url = url;",
                     "",
@@ -63,10 +61,10 @@
             "codeClass": null,
             "userConfig": {
                 "id": "feedgrid",
-                "minHeight": 200,
-                "minWidth": 150,
                 "layout|flex": 2,
-                "layout|region": "center"
+                "layout|region": "center",
+                "minHeight": 200,
+                "minWidth": 150
             },
             "designerId": "e6418b53-f559-4bbb-9b92-421652eef984",
             "masterInstanceId": "3f0846b9-bddf-471e-a17b-95cb5de14e54"
@@ -79,15 +77,14 @@
             },
             "codeClass": null,
             "userConfig": {
+                "height": null,
+                "itemId": "south",
+                "layout": "fit",
                 "layout|flex": 2,
                 "layout|region": "south",
                 "layout|split": true,
-                "height": null,
-                "itemId": "south",
                 "maxHeight": null,
-                "minHeight": 150,
-                "designer|userClassName": "MyContainer",
-                "layout": "fit"
+                "minHeight": 150
             },
             "designerId": "50f86382-f866-45c9-bf6e-08c5fbf39668",
             "cn": [
@@ -115,15 +112,14 @@
             },
             "codeClass": null,
             "userConfig": {
+                "hidden": true,
+                "itemId": "east",
+                "layout": "fit",
                 "layout|flex": 1,
                 "layout|region": "east",
                 "layout|split": true,
-                "hidden": true,
-                "itemId": "east",
                 "minWidth": 150,
-                "width": null,
-                "designer|userClassName": "MyContainer2",
-                "layout": "fit"
+                "width": null
             },
             "designerId": "8712e938-4873-4ba8-92d3-132ec5497f8d"
         }

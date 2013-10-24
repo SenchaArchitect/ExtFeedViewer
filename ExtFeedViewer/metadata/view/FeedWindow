@@ -6,13 +6,13 @@
     },
     "codeClass": null,
     "userConfig": {
-        "height": null,
-        "width": 500,
-        "designer|userClassName": "FeedWindow",
         "designer|userAlias": "feedwindow",
+        "designer|userClassName": "FeedWindow",
+        "height": null,
         "iconCls": "feed",
+        "plain": true,
         "title": "Add Feed",
-        "plain": true
+        "width": 500
     },
     "designerId": "800053d2-01bc-4ec9-89d3-437e0dd821bc",
     "cn": [
@@ -24,9 +24,8 @@
             },
             "codeClass": null,
             "userConfig": {
-                "itemId": "form",
-                "designer|userClassName": "MyForm",
                 "bodyPadding": "12 10 10",
+                "itemId": "form",
                 "title": null
             },
             "designerId": "7c0d0332-720e-4db8-a5ae-19fc1d7eaa63",
@@ -39,14 +38,13 @@
                     },
                     "codeClass": null,
                     "userConfig": {
-                        "layout|anchor": "100%",
-                        "itemId": "feed",
-                        "designer|userClassName": "MyComboBox",
-                        "fieldLabel": "Enter the URL of the feed to add",
-                        "labelAlign": "top",
-                        "msgTarget": "under",
                         "autoSelect": false,
                         "displayField": "title",
+                        "fieldLabel": "Enter the URL of the feed to add",
+                        "itemId": "feed",
+                        "labelAlign": "top",
+                        "layout|anchor": "100%",
+                        "msgTarget": "under",
                         "queryMode": "local",
                         "store": "DefaultFeedsStore",
                         "valueField": "url"
@@ -63,16 +61,14 @@
             },
             "codeClass": null,
             "userConfig": {
-                "dock": "bottom",
                 "container|align": "stretch",
-                "container|defaultMargins": null,
                 "container|pack": "end",
                 "container|padding": null,
+                "dock": "bottom",
                 "height": 24,
+                "layout": "hbox",
                 "margin": 8,
-                "padding": null,
-                "designer|userClassName": "MyContainer1",
-                "layout": "hbox"
+                "padding": null
             },
             "designerId": "86ce0413-f8e4-4280-bd8a-bbeb685afc20",
             "cn": [
@@ -85,9 +81,8 @@
                     "codeClass": null,
                     "userConfig": {
                         "itemId": "add",
-                        "width": 80,
-                        "designer|userClassName": "MyButton4",
-                        "text": "Add Feed"
+                        "text": "Add Feed",
+                        "width": 80
                     },
                     "designerId": "e2e435f9-10af-4d3f-b6a4-c689b59ad79e"
                 },
@@ -101,9 +96,8 @@
                     "userConfig": {
                         "itemId": "cancel",
                         "margin": "0 0 0 4",
-                        "width": 80,
-                        "designer|userClassName": "MyButton5",
-                        "text": "Cancel"
+                        "text": "Cancel",
+                        "width": 80
                     },
                     "designerId": "f4058543-ed55-497c-9b66-d04bec61680d"
                 }

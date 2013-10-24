@@ -18,21 +18,20 @@
             },
             "codeClass": null,
             "userConfig": {
-                "designer|userClassName": "onDataviewSelectionChange",
+                "designer|controlQuery": "#feedpanel #dataview",
+                "designer|targetType": "Ext.view.View",
                 "fn": "onDataviewSelectionChange",
                 "implHandler": [
                     "var removeButton = this.getFeedPanel().down('#remove');",
                     "",
-                    "removeButton.setDisabled(!selections.length);",
+                    "removeButton.setDisabled(!selected.length);",
                     "",
-                    "if (selections.length > 0) {",
-                    "    this.loadFeed(selections[0]);",
+                    "if (selected.length > 0) {",
+                    "    this.loadFeed(selected[0]);",
                     "}"
                 ],
                 "name": "selectionchange",
-                "scope": "me",
-                "designer|targetType": "Ext.view.View",
-                "designer|controlQuery": "#feedpanel #dataview"
+                "scope": "me"
             },
             "designerId": "d5e8a91e-d0fc-4254-9fc7-163f7c0f9206"
         },
@@ -44,11 +43,10 @@
             },
             "codeClass": null,
             "userConfig": {
-                "designer|userClassName": "loadFeed",
-                "fn": "loadFeed",
                 "designer|params": [
                     "feed"
                 ],
+                "fn": "loadFeed",
                 "implHandler": [
                     "var feedInfo = this.getFeedInfo(),",
                     "    active = feedInfo.items.first(),",
@@ -79,7 +77,8 @@
             },
             "codeClass": null,
             "userConfig": {
-                "designer|userClassName": "onGridpanelSelectionChange",
+                "designer|controlQuery": "#feedgrid",
+                "designer|targetType": "Ext.grid.Panel",
                 "fn": "onGridpanelSelectionChange",
                 "implHandler": [
                     "if (selected.length > 0) {",
@@ -87,9 +86,7 @@
                     "}"
                 ],
                 "name": "selectionchange",
-                "scope": "me",
-                "designer|targetType": "Ext.grid.Panel",
-                "designer|controlQuery": "#feedgrid"
+                "scope": "me"
             },
             "designerId": "e76bb53f-55ac-4d35-b5bc-f494c76e438d"
         },
@@ -101,11 +98,10 @@
             },
             "codeClass": null,
             "userConfig": {
-                "designer|userClassName": "loadPost",
-                "fn": "loadPost",
                 "designer|params": [
                     "post"
                 ],
+                "fn": "loadPost",
                 "implHandler": [
                     "var feedPost = this.getFeedPost();",
                     "",
@@ -123,7 +119,6 @@
             },
             "codeClass": null,
             "userConfig": {
-                "designer|userClassName": "markInvalid",
                 "fn": "markInvalid",
                 "implHandler": [
                     "this.getFeedForm().setLoading(false);",
@@ -140,11 +135,10 @@
             },
             "codeClass": null,
             "userConfig": {
-                "designer|userClassName": "validateFeed",
-                "fn": "validateFeed",
                 "designer|params": [
                     "response"
                 ],
+                "fn": "validateFeed",
                 "implHandler": [
                     "this.getFeedForm().setLoading(false);",
                     "        ",
@@ -185,14 +179,13 @@
             },
             "codeClass": null,
             "userConfig": {
-                "designer|userClassName": "animateNode",
-                "fn": "animateNode",
                 "designer|params": [
                     "el",
                     "start",
                     "end",
                     "listeners"
                 ],
+                "fn": "animateNode",
                 "implHandler": [
                     "Ext.create('Ext.fx.Anim', {",
                     "    target: Ext.get(el),",
@@ -217,12 +210,11 @@
             },
             "codeClass": null,
             "userConfig": {
-                "designer|userClassName": "onTabOpen",
-                "fn": "onTabOpen",
                 "designer|params": [
                     "post",
                     "rec"
                 ],
+                "fn": "onTabOpen",
                 "implHandler": [
                     "var feedInfo = this.getFeedInfo(),",
                     "    items = [],",
@@ -263,7 +255,6 @@
             },
             "codeClass": null,
             "userConfig": {
-                "designer|userClassName": "feedPanel",
                 "ref": "feedPanel",
                 "selector": "feedpanel"
             },
@@ -277,7 +268,6 @@
             },
             "codeClass": null,
             "userConfig": {
-                "designer|userClassName": "feedInfo",
                 "ref": "feedInfo",
                 "selector": "feedinfo"
             },
@@ -291,7 +281,6 @@
             },
             "codeClass": null,
             "userConfig": {
-                "designer|userClassName": "feedPost",
                 "ref": "feedPost",
                 "selector": "#feedpost"
             },
@@ -305,15 +294,14 @@
             },
             "codeClass": null,
             "userConfig": {
-                "designer|userClassName": "onDataviewViewReady",
+                "designer|controlQuery": "#feedpanel dataview",
+                "designer|targetType": "Ext.view.View",
                 "fn": "onDataviewViewReady",
                 "implHandler": [
                     "dataview.getSelectionModel().select(dataview.store.first());"
                 ],
                 "name": "viewready",
-                "scope": "me",
-                "designer|targetType": "Ext.view.View",
-                "designer|controlQuery": "#feedpanel dataview"
+                "scope": "me"
             },
             "designerId": "c631a453-0129-4946-8e31-3f63f6be982f"
         },
@@ -325,16 +313,15 @@
             },
             "codeClass": null,
             "userConfig": {
-                "designer|userClassName": "onOpenAddFeedWindow",
+                "designer|controlQuery": "#feedpanel #add",
+                "designer|targetType": "Ext.button.Button",
                 "fn": "onOpenAddFeedWindow",
                 "implHandler": [
                     "var win = Ext.create('widget.feedwindow');",
                     "win.show();"
                 ],
                 "name": "click",
-                "scope": "me",
-                "designer|targetType": "Ext.button.Button",
-                "designer|controlQuery": "#feedpanel #add"
+                "scope": "me"
             },
             "designerId": "ff45745e-6ad7-4774-baf9-69fee9f1469b"
         },
@@ -346,15 +333,14 @@
             },
             "codeClass": null,
             "userConfig": {
-                "designer|userClassName": "onFeedWindowCancel",
+                "designer|controlQuery": "feedwindow #cancel",
+                "designer|targetType": "Ext.button.Button",
                 "fn": "onFeedWindowCancel",
                 "implHandler": [
                     "this.getFeedWindow().destroy();"
                 ],
                 "name": "click",
-                "scope": "me",
-                "designer|targetType": "Ext.button.Button",
-                "designer|controlQuery": "feedwindow #cancel"
+                "scope": "me"
             },
             "designerId": "822a6b4e-a23d-4038-a8d2-20139bbab3f6"
         },
@@ -366,7 +352,6 @@
             },
             "codeClass": null,
             "userConfig": {
-                "designer|userClassName": "feedWindow",
                 "ref": "feedWindow",
                 "selector": "feedwindow"
             },
@@ -380,7 +365,8 @@
             },
             "codeClass": null,
             "userConfig": {
-                "designer|userClassName": "onAddFeed",
+                "designer|controlQuery": "feedwindow #add",
+                "designer|targetType": "Ext.button.Button",
                 "fn": "onAddFeed",
                 "implHandler": [
                     "var url = this.getFeedUrl().getValue();",
@@ -399,9 +385,7 @@
                     "});"
                 ],
                 "name": "click",
-                "scope": "me",
-                "designer|targetType": "Ext.button.Button",
-                "designer|controlQuery": "feedwindow #add"
+                "scope": "me"
             },
             "designerId": "4be6ba69-aaf3-4437-b5ca-54a93128d8bf"
         },
@@ -413,7 +397,6 @@
             },
             "codeClass": null,
             "userConfig": {
-                "designer|userClassName": "feedUrl",
                 "ref": "feedUrl",
                 "selector": "feedwindow #feed"
             },
@@ -427,7 +410,6 @@
             },
             "codeClass": null,
             "userConfig": {
-                "designer|userClassName": "feedForm",
                 "ref": "feedForm",
                 "selector": "feedwindow #form"
             },
@@ -441,7 +423,6 @@
             },
             "codeClass": null,
             "userConfig": {
-                "designer|userClassName": "feedPanelView",
                 "ref": "feedPanelView",
                 "selector": "feedpanel #dataview"
             },
@@ -455,7 +436,8 @@
             },
             "codeClass": null,
             "userConfig": {
-                "designer|userClassName": "onRemoveFeed",
+                "designer|controlQuery": "feedpanel #remove",
+                "designer|targetType": "Ext.button.Button",
                 "fn": "onRemoveFeed",
                 "implHandler": [
                     "var view = this.getFeedPanelView(),",
@@ -472,9 +454,7 @@
                     ""
                 ],
                 "name": "click",
-                "scope": "me",
-                "designer|targetType": "Ext.button.Button",
-                "designer|controlQuery": "feedpanel #remove"
+                "scope": "me"
             },
             "designerId": "87f27c6a-2b70-466a-b933-ca240c8fcdc0"
         },
@@ -486,15 +466,14 @@
             },
             "codeClass": null,
             "userConfig": {
-                "designer|userClassName": "onSummaryToggle",
+                "designer|controlQuery": "feedgrid #summary",
+                "designer|targetType": "Ext.button.Button",
                 "fn": "onSummaryToggle",
                 "implHandler": [
                     "button.up('feedgrid').down('#view').getPlugin('preview').toggleExpanded(pressed);"
                 ],
                 "name": "toggle",
-                "scope": "me",
-                "designer|targetType": "Ext.button.Button",
-                "designer|controlQuery": "feedgrid #summary"
+                "scope": "me"
             },
             "designerId": "b1e0ed8a-3e09-4c21-83ee-8dca2c28544f"
         },
@@ -506,7 +485,8 @@
             },
             "codeClass": null,
             "userConfig": {
-                "designer|userClassName": "onReadingPaneChange",
+                "designer|controlQuery": "feedgrid #readingpane",
+                "designer|targetType": "Ext.button.Cycle",
                 "fn": "onReadingPaneChange",
                 "implHandler": [
                     "var east = cycle.up('feeddetail').down('#east'),",
@@ -531,9 +511,7 @@
                     "}"
                 ],
                 "name": "change",
-                "scope": "me",
-                "designer|targetType": "Ext.button.Cycle",
-                "designer|controlQuery": "feedgrid #readingpane"
+                "scope": "me"
             },
             "designerId": "d3b7e2b0-9d6e-432b-9181-63fbebb99f88"
         },
@@ -545,15 +523,14 @@
             },
             "codeClass": null,
             "userConfig": {
-                "designer|userClassName": "onOpenAll",
+                "designer|controlQuery": "feedgrid #openall",
+                "designer|targetType": "Ext.button.Button",
                 "fn": "onOpenAll",
                 "implHandler": [
                     "this.onTabOpen(null, Ext.getStore('FeedItemStore').getRange());"
                 ],
                 "name": "click",
-                "scope": "me",
-                "designer|targetType": "Ext.button.Button",
-                "designer|controlQuery": "feedgrid #openall"
+                "scope": "me"
             },
             "designerId": "46645135-b625-4bdd-a438-b2659a95df5f"
         },
@@ -565,15 +542,14 @@
             },
             "codeClass": null,
             "userConfig": {
-                "designer|userClassName": "onDataviewItemDblClick",
+                "designer|controlQuery": "#feedgrid",
+                "designer|targetType": "Ext.grid.Panel",
                 "fn": "onDataviewItemDblClick",
                 "implHandler": [
                     "this.onTabOpen(null, record);"
                 ],
                 "name": "itemdblclick",
-                "scope": "me",
-                "designer|targetType": "Ext.grid.Panel",
-                "designer|controlQuery": "#feedgrid"
+                "scope": "me"
             },
             "designerId": "da73153e-20f4-484f-8213-9aa88fb5e1c6"
         },
@@ -585,7 +561,6 @@
             },
             "codeClass": null,
             "userConfig": {
-                "designer|userClassName": "feedGridView",
                 "ref": "feedGridView",
                 "selector": "feedgrid #view"
             },
@@ -599,11 +574,10 @@
             },
             "codeClass": null,
             "userConfig": {
-                "designer|userClassName": "init",
-                "fn": "init",
                 "designer|params": [
                     "application"
                 ],
+                "fn": "init",
                 "implHandler": [
                     "Ext.getStore('FeedItemStore').on('load', function() {",
                     "    this.getFeedGridView().getSelectionModel().select(0);",
@@ -620,7 +594,8 @@
             },
             "codeClass": null,
             "userConfig": {
-                "designer|userClassName": "onGotoPostClick",
+                "designer|controlQuery": "feedpost #gotopost",
+                "designer|targetType": "Ext.button.Button",
                 "fn": "onGotoPostClick",
                 "implHandler": [
                     "var post = button.up('feedpost');",
@@ -628,9 +603,7 @@
                     "window.open(post.active.get('link'));"
                 ],
                 "name": "click",
-                "scope": "me",
-                "designer|targetType": "Ext.button.Button",
-                "designer|controlQuery": "feedpost #gotopost"
+                "scope": "me"
             },
             "designerId": "7c8318c9-3e9c-4da1-9903-15827bbc13c1"
         },
@@ -642,7 +615,8 @@
             },
             "codeClass": null,
             "userConfig": {
-                "designer|userClassName": "onViewInTabClick",
+                "designer|controlQuery": "feedpost #viewintab",
+                "designer|targetType": "Ext.button.Button",
                 "fn": "onViewInTabClick",
                 "implHandler": [
                     "var post = button.up('feedpost');",
@@ -650,9 +624,7 @@
                     "this.onTabOpen(post, post.active);"
                 ],
                 "name": "click",
-                "scope": "me",
-                "designer|targetType": "Ext.button.Button",
-                "designer|controlQuery": "feedpost #viewintab"
+                "scope": "me"
             },
             "designerId": "ad1a25d8-15f3-450b-8279-f354b8b374ef"
         }

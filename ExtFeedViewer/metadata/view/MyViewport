@@ -6,11 +6,11 @@
     },
     "codeClass": null,
     "userConfig": {
-        "padding": 5,
-        "designer|userClassName": "MyViewport",
-        "designer|initialView": true,
         "defaults": null,
-        "layout": "border"
+        "designer|initialView": true,
+        "designer|userClassName": "MyViewport",
+        "layout": "border",
+        "padding": 5
     },
     "designerId": "29c25f5d-cff4-4199-951d-e3a1dfddcc12",
     "cn": [
@@ -22,10 +22,10 @@
             },
             "codeClass": null,
             "userConfig": {
-                "id": "feedpanel",
-                "width": 250,
                 "collapsible": true,
-                "layout|region": "west"
+                "id": "feedpanel",
+                "layout|region": "west",
+                "width": 250
             },
             "designerId": "bc2a50e6-3c8e-4a92-bbc2-52d6469101b8",
             "masterInstanceId": "c84fb3e7-80ad-4f16-b5ff-73aed7162ce4"

@@ -7,12 +7,12 @@
     "codeClass": null,
     "userConfig": {
         "cls": "feed-grid",
-        "height": null,
-        "width": null,
-        "designer|userClassName": "FeedGrid",
         "designer|userAlias": "feedgrid",
+        "designer|userClassName": "FeedGrid",
+        "height": null,
+        "store": "FeedItemStore",
         "title": null,
-        "store": "FeedItemStore"
+        "width": null
     },
     "designerId": "3f0846b9-bddf-471e-a17b-95cb5de14e54",
     "cn": [
@@ -24,10 +24,9 @@
             },
             "codeClass": null,
             "userConfig": {
-                "dock": "top",
                 "cls": "x-docked-noborder-top",
-                "width": null,
-                "designer|userClassName": "MyToolbar1"
+                "dock": "top",
+                "width": null
             },
             "designerId": "64b1354a-7b38-4905-883f-032c38125781",
             "cn": [
@@ -39,10 +38,9 @@
                     },
                     "codeClass": null,
                     "userConfig": {
-                        "layout|flex": null,
-                        "itemId": "openall",
-                        "designer|userClassName": "MyButton2",
                         "iconCls": "open-all",
+                        "itemId": "openall",
+                        "layout|flex": null,
                         "text": "Open All"
                     },
                     "designerId": "104b5a32-0bbd-4ce6-8fdc-bbf3060ef835"
@@ -55,8 +53,7 @@
                     },
                     "codeClass": null,
                     "userConfig": {
-                        "layout|flex": null,
-                        "designer|userClassName": "MySeparator"
+                        "layout|flex": null
                     },
                     "designerId": "bb53f2bd-b168-48d0-b968-dbb7124fa606"
                 },
@@ -68,12 +65,11 @@
                     },
                     "codeClass": null,
                     "userConfig": {
-                        "layout|flex": null,
                         "itemId": "readingpane",
-                        "designer|userClassName": "MyCycleButton",
-                        "text": "Reading Pane",
+                        "layout|flex": null,
                         "prependText": "Preview: ",
-                        "showText": true
+                        "showText": true,
+                        "text": "Reading Pane"
                     },
                     "designerId": "6c2a1e27-851a-4303-b655-8ea395e70532",
                     "cn": [
@@ -86,8 +82,7 @@
                             "codeClass": null,
                             "userConfig": {
                                 "id": "reading-menu",
-                                "width": null,
-                                "designer|userClassName": "MyMenu"
+                                "width": null
                             },
                             "designerId": "436a335e-5227-4864-801f-d768d567bf19",
                             "cn": [
@@ -99,12 +94,11 @@
                                     },
                                     "codeClass": null,
                                     "userConfig": {
-                                        "componentCls": null,
-                                        "designer|userClassName": "MyCheckItem",
-                                        "iconCls": "preview-bottom",
-                                        "text": "Bottom",
+                                        "checked": null,
                                         "checkedCls": null,
-                                        "checked": null
+                                        "componentCls": null,
+                                        "iconCls": "preview-bottom",
+                                        "text": "Bottom"
                                     },
                                     "designerId": "c2240361-b160-45a0-83a4-0545cf0e9747"
                                 },
@@ -116,7 +110,6 @@
                                     },
                                     "codeClass": null,
                                     "userConfig": {
-                                        "designer|userClassName": "MyCheckItem1",
                                         "iconCls": "preview-right",
                                         "text": "Right"
                                     },
@@ -130,7 +123,6 @@
                                     },
                                     "codeClass": null,
                                     "userConfig": {
-                                        "designer|userClassName": "MyCheckItem2",
                                         "iconCls": "preview-hide",
                                         "text": "Hide"
                                     },
@@ -148,14 +140,13 @@
                     },
                     "codeClass": null,
                     "userConfig": {
-                        "layout|flex": null,
-                        "itemId": "summary",
-                        "width": null,
-                        "designer|userClassName": "MyButton3",
                         "enableToggle": true,
                         "iconCls": "summary",
+                        "itemId": "summary",
+                        "layout|flex": null,
                         "pressed": true,
-                        "text": "Summary"
+                        "text": "Summary",
+                        "width": null
                     },
                     "designerId": "6128d902-54e3-4d55-95a3-f5ae19e992a8"
                 }
@@ -169,10 +160,9 @@
             },
             "codeClass": null,
             "userConfig": {
-                "designer|userClassName": "MyColumn",
                 "dataIndex": "title",
-                "text": "Title",
-                "flex": 1
+                "flex": 1,
+                "text": "Title"
             },
             "designerId": "36228ad8-f297-4a26-aaa5-9988ea40c01e",
             "cn": [
@@ -184,8 +174,6 @@
                     },
                     "codeClass": null,
                     "userConfig": {
-                        "designer|userClassName": "renderer",
-                        "fn": "renderer",
                         "designer|params": [
                             "value",
                             "metaData",
@@ -195,6 +183,7 @@
                             "store",
                             "view"
                         ],
+                        "fn": "renderer",
                         "implHandler": [
                             "return Ext.String.format('<div class=\"topic\"><b>{0}</b><span class=\"author\">{1}</span></div>', value, record.get('author') || \"Unknown\");"
                         ]
@@ -211,11 +200,10 @@
             },
             "codeClass": null,
             "userConfig": {
-                "hidden": true,
-                "width": 200,
-                "designer|userClassName": "MyColumn1",
                 "dataIndex": "author",
-                "text": "Author"
+                "hidden": true,
+                "text": "Author",
+                "width": 200
             },
             "designerId": "d92f0abc-bbeb-47be-86c2-b3559f9d1b86"
         },
@@ -227,10 +215,9 @@
             },
             "codeClass": null,
             "userConfig": {
-                "width": 200,
-                "designer|userClassName": "MyColumn2",
                 "dataIndex": "pubDate",
-                "text": "Date"
+                "text": "Date",
+                "width": 200
             },
             "designerId": "dd72376b-1d27-4d90-8b64-82f9a391bb20",
             "cn": [
@@ -242,8 +229,6 @@
                     },
                     "codeClass": null,
                     "userConfig": {
-                        "designer|userClassName": "renderer",
-                        "fn": "renderer",
                         "designer|params": [
                             "value",
                             "metaData",
@@ -253,6 +238,7 @@
                             "store",
                             "view"
                         ],
+                        "fn": "renderer",
                         "implHandler": [
                             "if (!value) {",
                             "    return '';",
@@ -284,8 +270,7 @@
             },
             "codeClass": null,
             "userConfig": {
-                "itemId": "view",
-                "designer|userClassName": "MyGridView"
+                "itemId": "view"
             },
             "designerId": "608a4349-68c4-4321-b7c6-0c147977acce"
         },
@@ -297,11 +282,10 @@
             },
             "codeClass": null,
             "userConfig": {
-                "designer|userClassName": "loadFeed",
-                "fn": "loadFeed",
                 "designer|params": [
                     "url"
                 ],
+                "fn": "loadFeed",
                 "implHandler": [
                     "var store = this.store;",
                     "store.getProxy().extraParams.feed = url;",
@@ -318,11 +302,10 @@
             },
             "codeClass": null,
             "userConfig": {
-                "designer|userClassName": "processFeedGrid",
-                "fn": "processFeedGrid",
                 "designer|params": [
                     "config"
                 ],
+                "fn": "processFeedGrid",
                 "implHandler": [
                     "config.viewConfig = {",
                     "    itemId: 'view',",

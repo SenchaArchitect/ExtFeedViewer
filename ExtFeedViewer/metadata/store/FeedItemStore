@@ -6,9 +6,9 @@
     },
     "codeClass": null,
     "userConfig": {
+        "designer|userClassName": "FeedItemStore",
         "model": "FeedItem",
-        "storeId": "FeedItemStore",
-        "designer|userClassName": "FeedItemStore"
+        "storeId": "FeedItemStore"
     },
     "designerId": "91af3be2-a1de-4a58-9dd1-c19bccd5fef7",
     "cn": [
@@ -20,7 +20,6 @@
             },
             "codeClass": null,
             "userConfig": {
-                "designer|userClassName": "MyAjaxProxy",
                 "url": "feed-proxy.php"
             },
             "designerId": "fe78dabb-3f72-47a4-8745-e7b001e42151",
@@ -33,7 +32,6 @@
                     },
                     "codeClass": null,
                     "userConfig": {
-                        "designer|userClassName": "MyXmlReader",
                         "record": "item"
                     },
                     "designerId": "2a7a0020-8ddd-4cdf-ae93-ff1cdaacc003"
@@ -49,8 +47,7 @@
             "codeClass": null,
             "userConfig": {
                 "direction": "DESC",
-                "property": "pubDate",
-                "designer|userClassName": "MySorter"
+                "property": "pubDate"
             },
             "designerId": "5cc23a50-1403-45d0-a066-94f2bdd62c7a"
         }

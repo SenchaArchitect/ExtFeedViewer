@@ -52,12 +52,10 @@ Ext.define('Ext.ux.PreviewPlugin', {
             features = [{
                 ftype: 'rowbody',
                 getAdditionalData: function(data, idx, record, orig, view) {
-                    var o = Ext.grid.feature.RowBody.prototype.getAdditionalData.apply(this, arguments);
-                    Ext.apply(o, {
+                    return {
                         rowBody: data[bodyField],
                         rowBodyCls: section.previewExpanded ? '' : hideBodyCls
-                    });
-                    return o;
+                    };
                 }
             },{
                 ftype: 'rowwrap'

@@ -1,6 +1,11 @@
 {
     "name": "FeedViewer",
     "settings": {
+        "cmd": {
+            "license": "commercial",
+            "cmdVersion": "4.0.0.203",
+            "frameworkVersion": "4.2.1.883"
+        },
         "urlPrefix": "http://localhost/ExtFeedViewer/",
         "spacesToIndent": 4,
         "exportPath": "",
@@ -14,132 +19,26 @@
         "instantiateStore": true,
         "saveOnDeploy": false,
         "appName": "MyApp",
-        "buildShouldOverwriteIndex": true
-    },
-    "xdsVersion": "2.2.0",
-    "xdsBuild": 894,
-    "schemaVersion": 1,
-    "upgradeVersion": 210000000499,
-    "framework": "ext40",
-    "topInstanceFileMap": {
-        "29c25f5d-cff4-4199-951d-e3a1dfddcc12": {
-            "paths": [
-                "metadata/view/MyViewport",
-                "app/view/override/MyViewport.js",
-                "app/view/MyViewport.js",
-                "app/view/Viewport.js"
-            ],
-            "className": "MyViewport"
+        "buildShouldOverwriteIndex": true,
+        "canvasControls": {
+            "viewportSize": {
+                "name": "Auto Expand",
+                "builtIn": true,
+                "height": null,
+                "width": null
+            }
         },
-        "f3e12d72-b301-4ba2-9484-afed23aa6830": {
-            "paths": [
-                "metadata/store/FeedStore",
-                "app/store/override/FeedStore.js",
-                "app/store/FeedStore.js"
-            ],
-            "className": "FeedStore"
-        },
-        "bae4018f-44b7-474a-9290-298f3814dd81": {
-            "paths": [
-                "metadata/model/Feed",
-                "app/model/override/Feed.js",
-                "app/model/Feed.js"
-            ],
-            "className": "Feed"
-        },
-        "68141c8e-578f-4b49-b1c0-e140070964e7": {
-            "paths": [
-                "metadata/controller/FeedController",
-                "app/controller/override/FeedController.js",
-                "app/controller/FeedController.js"
-            ],
-            "className": "FeedController"
-        },
-        "c84fb3e7-80ad-4f16-b5ff-73aed7162ce4": {
-            "paths": [
-                "metadata/view/FeedPanel",
-                "app/view/override/FeedPanel.js",
-                "app/view/FeedPanel.js"
-            ],
-            "className": "FeedPanel"
-        },
-        "b083da5f-2aca-42d4-b9b5-016a581ea465": {
-            "paths": [
-                "metadata/view/FeedInfo",
-                "app/view/override/FeedInfo.js",
-                "app/view/FeedInfo.js"
-            ],
-            "className": "FeedInfo"
-        },
-        "19737a33-9c3a-4c90-b562-0ff17c79e914": {
-            "paths": [
-                "metadata/view/FeedDetail",
-                "app/view/override/FeedDetail.js",
-                "app/view/FeedDetail.js"
-            ],
-            "className": "FeedDetail"
-        },
-        "3f0846b9-bddf-471e-a17b-95cb5de14e54": {
-            "paths": [
-                "metadata/view/FeedGrid",
-                "app/view/override/FeedGrid.js",
-                "app/view/FeedGrid.js"
-            ],
-            "className": "FeedGrid"
-        },
-        "3f6c3bf2-72c0-4f3a-a351-f1a663a6a543": {
-            "paths": [
-                "metadata/model/FeedItem",
-                "app/model/override/FeedItem.js",
-                "app/model/FeedItem.js"
-            ],
-            "className": "FeedItem"
-        },
-        "91af3be2-a1de-4a58-9dd1-c19bccd5fef7": {
-            "paths": [
-                "metadata/store/FeedItemStore",
-                "app/store/override/FeedItemStore.js",
-                "app/store/FeedItemStore.js"
-            ],
-            "className": "FeedItemStore"
-        },
-        "7067e8e9-8049-4d34-b6d9-8ed2bb34dd81": {
-            "paths": [
-                "metadata/view/FeedPost",
-                "app/view/override/FeedPost.js",
-                "app/view/FeedPost.js"
-            ],
-            "className": "FeedPost"
-        },
-        "800053d2-01bc-4ec9-89d3-437e0dd821bc": {
-            "paths": [
-                "metadata/view/FeedWindow",
-                "app/view/override/FeedWindow.js",
-                "app/view/FeedWindow.js"
-            ],
-            "className": "FeedWindow"
-        },
-        "16a083db-7161-48f8-93d8-8ffa3ea34203": {
-            "paths": [
-                "metadata/store/DefaultFeedsStore",
-                "app/store/override/DefaultFeedsStore.js",
-                "app/store/DefaultFeedsStore.js"
-            ],
-            "className": "DefaultFeedsStore"
-        },
-        "6634f12a-0d03-419c-8b02-59d383cb88eb": {
-            "paths": [
-                "metadata/resource/css"
-            ],
-            "className": "css"
-        },
-        "a54fe668-0184-4721-bdc3-d27c53c65bb9": {
-            "paths": [
-                "metadata/resource/Library"
-            ],
-            "className": "Library"
+        "generateArchitectVersion": true,
+        "lastBuildSelection": {
+            "value": "webBuild",
+            "display": "Build web app"
         }
     },
+    "xdsVersion": "3.0.0",
+    "xdsBuild": 1316,
+    "schemaVersion": 1,
+    "upgradeVersion": 300000000001,
+    "framework": "ext42",
     "viewOrderMap": {
         "view": [
             "3f0846b9-bddf-471e-a17b-95cb5de14e54",

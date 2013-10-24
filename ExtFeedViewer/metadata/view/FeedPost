@@ -6,14 +6,14 @@
     },
     "codeClass": null,
     "userConfig": {
+        "autoScroll": true,
         "border": null,
         "cls": "preview",
-        "height": null,
-        "width": null,
-        "designer|userClassName": "FeedPost",
         "designer|userAlias": "feedpost",
-        "autoScroll": true,
-        "title": null
+        "designer|userClassName": "FeedPost",
+        "height": null,
+        "title": null,
+        "width": null
     },
     "designerId": "7067e8e9-8049-4d34-b6d9-8ed2bb34dd81",
     "cn": [
@@ -25,7 +25,6 @@
             },
             "codeClass": null,
             "userConfig": {
-                "designer|userClassName": "createToolbar",
                 "fn": "createToolbar",
                 "implHandler": [
                     "var items = [],",
@@ -62,11 +61,10 @@
             },
             "codeClass": null,
             "userConfig": {
-                "designer|userClassName": "processFeedPost",
-                "fn": "processFeedPost",
                 "designer|params": [
                     "config"
                 ],
+                "fn": "processFeedPost",
                 "implHandler": [
                     "config.dockedItems = [this.createToolbar()];",
                     "config.tpl = Ext.create('Ext.XTemplate',",

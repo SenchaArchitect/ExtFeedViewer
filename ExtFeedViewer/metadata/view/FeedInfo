@@ -6,11 +6,11 @@
     },
     "codeClass": null,
     "userConfig": {
-        "height": null,
-        "width": null,
-        "designer|userClassName": "FeedInfo",
+        "activeTab": 0,
         "designer|userAlias": "feedinfo",
-        "activeTab": 0
+        "designer|userClassName": "FeedInfo",
+        "height": null,
+        "width": null
     },
     "designerId": "b083da5f-2aca-42d4-b9b5-016a581ea465"
 }
