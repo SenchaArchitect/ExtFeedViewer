@@ -413,7 +413,6 @@ Ext.ClassManager.addNameAlternateMappings({
   ],
   "Ext.grid.RowEditor": [],
   "Ext.grid.RowEditorButtons": [],
-  "Ext.grid.Scroller": [],
   "Ext.grid.View": [],
   "Ext.grid.ViewDropZone": [],
   "Ext.grid.column.Action": [
@@ -844,8 +843,7 @@ Ext.ClassManager.addNameAlternateMappings({
   "MyApp.view.FeedPanel": [],
   "MyApp.view.FeedPost": [],
   "MyApp.view.FeedWindow": [],
-  "MyApp.view.MyViewport": [],
-  "MyApp.view.Viewport": []
+  "MyApp.view.MyViewport": []
 });
 Ext.ClassManager.addNameAliasMappings({
   "Ext.AbstractComponent": [],
@@ -1283,7 +1281,6 @@ Ext.ClassManager.addNameAliasMappings({
   "Ext.grid.RowEditorButtons": [
     "widget.roweditorbuttons"
   ],
-  "Ext.grid.Scroller": [],
   "Ext.grid.View": [
     "widget.gridview"
   ],
@@ -1862,8 +1859,7 @@ Ext.ClassManager.addNameAliasMappings({
   "MyApp.view.FeedWindow": [
     "widget.feedwindow"
   ],
-  "MyApp.view.MyViewport": [],
-  "MyApp.view.Viewport": []
+  "MyApp.view.MyViewport": []
 });
 Ext.setVersion("ext-theme-base", "4.2.1");
 Ext.setVersion("ext-theme-classic", "4.2.1");

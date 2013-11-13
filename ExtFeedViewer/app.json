@@ -10,6 +10,7 @@
       "_comment": "Please don't edit. This is Architect data.",
       "resources": [
          "Feed-Viewer.css"
-      ]
+      ],
+      "requires": []
    }
 }

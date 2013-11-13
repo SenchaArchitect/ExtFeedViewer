@@ -6,7 +6,6 @@
     },
     "codeClass": null,
     "userConfig": {
-        "autoCreateViewport": true,
         "controllers": [
             "FeedController"
         ],
@@ -57,10 +56,7 @@
             },
             "codeClass": null,
             "userConfig": {
-                "enabled": true,
-                "paths": [
-                    "{\"Ext.ux\":\"ux/\"}"
-                ]
+                "enabled": true
             },
             "designerId": "10e31052-bd3e-4fa1-9e22-9983d22d34f7"
         }

@@ -17,10 +17,10 @@ Ext.define('MyApp.store.FeedItemStore', {
     extend: 'Ext.data.Store',
 
     requires: [
+        'MyApp.model.FeedItem',
         'Ext.data.proxy.Ajax',
         'Ext.data.reader.Xml',
-        'Ext.util.Sorter',
-        'MyApp.model.FeedItem'
+        'Ext.util.Sorter'
     ],
 
     constructor: function(cfg) {

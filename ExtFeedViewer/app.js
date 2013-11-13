@@ -15,10 +15,7 @@
 
 // @require @packageOverrides
 Ext.Loader.setConfig({
-    enabled: true,
-    paths: {
-        'Ext.ux': 'ux/'
-    }
+    enabled: true
 });
 
 
@@ -51,10 +48,10 @@ Ext.application({
     name: 'MyApp',
 
     launch: function() {
+        Ext.create('MyApp.view.MyViewport');
         Ext.syncRequire([
             'Ext.ux.PreviewPlugin'
         ]);
-                Ext.create('MyApp.view.MyViewport');
     }
 
 });
